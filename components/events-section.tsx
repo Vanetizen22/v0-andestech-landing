@@ -2,9 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Calendar, MapPin, Users, Clock, ImageIcon } from "lucide-react"
-import { useState } from "react"
-import { RegisterModal } from "@/components/register-modal"
-import { GalleryModal } from "@/components/gallery-modal"
+import Link from "next/link"
 
 const upcomingEvents = [
   {
@@ -14,6 +12,7 @@ const upcomingEvents = [
     location: "Coworking Tech Hub, Mendoza",
     attendees: 45,
     image: "/workshop-react.jpg",
+    lumaUrl: "https://lu.ma/andestech-react-workshop",
   },
   {
     title: "/birras - Networking Casual",
@@ -22,6 +21,7 @@ const upcomingEvents = [
     location: "Cervecería Andes, San Juan",
     attendees: 60,
     image: "/birras-event.jpg",
+    lumaUrl: "https://lu.ma/andestech-birras",
   },
   {
     title: "DevCafé: Charlas Tech",
@@ -30,19 +30,11 @@ const upcomingEvents = [
     location: "Café Central, Mendoza",
     attendees: 30,
     image: "/devcafe-event.jpg",
+    lumaUrl: "https://lu.ma/andestech-devcafe",
   },
 ]
 
 export function EventsSection() {
-  const [showRegisterModal, setShowRegisterModal] = useState(false)
-  const [selectedEvent, setSelectedEvent] = useState<string>("")
-  const [showGallery, setShowGallery] = useState(false)
-
-  const handleRegister = (eventTitle: string) => {
-    setSelectedEvent(eventTitle)
-    setShowRegisterModal(true)
-  }
-
   return (
     <section id="eventos" className="relative py-24 px-4">
       <div className="container mx-auto max-w-7xl">
@@ -86,10 +78,10 @@ export function EventsSection() {
                   </div>
                 </div>
                 <Button
-                  onClick={() => handleRegister(event.title)}
+                  onClick={() => window.open(event.lumaUrl, "_blank")}
                   className="w-full group-hover:shadow-[0_0_20px_rgba(0,217,255,0.5)] transition-all"
                 >
-                  Registrarse
+                  Registrarse en Luma
                 </Button>
               </div>
             </div>
@@ -97,15 +89,16 @@ export function EventsSection() {
         </div>
 
         <div className="text-center mt-12 flex gap-4 justify-center">
-          <Button
-            size="lg"
-            variant="outline"
-            onClick={() => setShowGallery(true)}
-            className="border-primary/50 hover:bg-primary/10 hover-lift bg-transparent"
-          >
-            <ImageIcon className="w-5 h-5 mr-2" />
-            Ver Galería de Eventos
-          </Button>
+          <Link href="/galeria">
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-primary/50 hover:bg-primary/10 hover-lift bg-transparent"
+            >
+              <ImageIcon className="w-5 h-5 mr-2" />
+              Ver Galería de Eventos
+            </Button>
+          </Link>
           <Button
             size="lg"
             variant="outline"
@@ -116,13 +109,6 @@ export function EventsSection() {
           </Button>
         </div>
       </div>
-
-      <RegisterModal
-        isOpen={showRegisterModal}
-        onClose={() => setShowRegisterModal(false)}
-        eventTitle={selectedEvent}
-      />
-      <GalleryModal isOpen={showGallery} onClose={() => setShowGallery(false)} />
     </section>
   )
 }

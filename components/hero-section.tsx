@@ -4,11 +4,9 @@ import { Button } from "@/components/ui/button"
 import { Mountain, Instagram, Linkedin, MessageCircle, Send } from "lucide-react"
 import { CodeBackground } from "@/components/code-background"
 import { useEffect, useState } from "react"
-import { RegisterModal } from "@/components/register-modal"
 
 export function HeroSection() {
   const [isVisible, setIsVisible] = useState(false)
-  const [showRegisterModal, setShowRegisterModal] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -61,7 +59,7 @@ export function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
             <Button
               size="lg"
-              onClick={() => setShowRegisterModal(true)}
+              onClick={() => window.open("https://chat.whatsapp.com/XXXXXXXXXXXXXX", "_blank")}
               className="group relative text-lg px-8 animate-pulse-glow hover:scale-105 transition-transform duration-300 overflow-hidden"
             >
               <span className="relative z-10">¡Únete a la Comunidad!</span>
@@ -113,8 +111,6 @@ export function HeroSection() {
           </div>
         </div>
       </div>
-
-      <RegisterModal isOpen={showRegisterModal} onClose={() => setShowRegisterModal(false)} />
     </section>
   )
 }
