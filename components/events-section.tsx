@@ -1,7 +1,10 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Calendar, MapPin, Users, Clock } from "lucide-react"
+import { Calendar, MapPin, Users, Clock, ImageIcon } from "lucide-react"
+import { useState } from "react"
+import { RegisterModal } from "@/components/register-modal"
+import { GalleryModal } from "@/components/gallery-modal"
 
 const upcomingEvents = [
   {
@@ -31,8 +34,17 @@ const upcomingEvents = [
 ]
 
 export function EventsSection() {
+  const [showRegisterModal, setShowRegisterModal] = useState(false)
+  const [selectedEvent, setSelectedEvent] = useState<string>("")
+  const [showGallery, setShowGallery] = useState(false)
+
+  const handleRegister = (eventTitle: string) => {
+    setSelectedEvent(eventTitle)
+    setShowRegisterModal(true)
+  }
+
   return (
-    <section className="relative py-24 px-4">
+    <section id="eventos" className="relative py-24 px-4">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -73,7 +85,10 @@ export function EventsSection() {
                     <span>{event.attendees} asistentes confirmados</span>
                   </div>
                 </div>
-                <Button className="w-full group-hover:shadow-[0_0_20px_rgba(0,217,255,0.5)] transition-all">
+                <Button
+                  onClick={() => handleRegister(event.title)}
+                  className="w-full group-hover:shadow-[0_0_20px_rgba(0,217,255,0.5)] transition-all"
+                >
                   Registrarse
                 </Button>
               </div>
@@ -81,16 +96,33 @@ export function EventsSection() {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-12 flex gap-4 justify-center">
           <Button
             size="lg"
             variant="outline"
+            onClick={() => setShowGallery(true)}
+            className="border-primary/50 hover:bg-primary/10 hover-lift bg-transparent"
+          >
+            <ImageIcon className="w-5 h-5 mr-2" />
+            Ver Galería de Eventos
+          </Button>
+          <Button
+            size="lg"
+            variant="outline"
+            onClick={() => window.open("https://lu.ma/andestech", "_blank")}
             className="border-primary/50 hover:bg-primary/10 hover-lift bg-transparent"
           >
             Ver Todos los Eventos
           </Button>
         </div>
       </div>
+
+      <RegisterModal
+        isOpen={showRegisterModal}
+        onClose={() => setShowRegisterModal(false)}
+        eventTitle={selectedEvent}
+      />
+      <GalleryModal isOpen={showGallery} onClose={() => setShowGallery(false)} />
     </section>
   )
 }

@@ -4,27 +4,34 @@ import { Button } from "@/components/ui/button"
 import { Mountain, Instagram, Linkedin, MessageCircle, Send } from "lucide-react"
 import { CodeBackground } from "@/components/code-background"
 import { useEffect, useState } from "react"
+import { RegisterModal } from "@/components/register-modal"
 
 export function HeroSection() {
   const [isVisible, setIsVisible] = useState(false)
+  const [showRegisterModal, setShowRegisterModal] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY
       const windowHeight = window.innerHeight
 
-      // Trigger animation when user scrolls down a bit or on initial load
       if (scrollPosition > 50 || scrollPosition === 0) {
         setIsVisible(true)
       }
     }
 
-    // Trigger on mount
     setIsVisible(true)
 
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
+
+  const scrollToEvents = () => {
+    const eventsSection = document.getElementById("eventos")
+    if (eventsSection) {
+      eventsSection.scrollIntoView({ behavior: "smooth" })
+    }
+  }
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -54,6 +61,7 @@ export function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
             <Button
               size="lg"
+              onClick={() => setShowRegisterModal(true)}
               className="group relative text-lg px-8 animate-pulse-glow hover:scale-105 transition-transform duration-300 overflow-hidden"
             >
               <span className="relative z-10">¡Únete a la Comunidad!</span>
@@ -62,6 +70,7 @@ export function HeroSection() {
             <Button
               size="lg"
               variant="outline"
+              onClick={scrollToEvents}
               className="text-lg px-8 border-primary/50 hover:bg-primary/10 bg-transparent hover-lift"
             >
               Ver Próximos Eventos
@@ -70,25 +79,33 @@ export function HeroSection() {
 
           <div className="flex gap-6 justify-center items-center pt-8">
             <a
-              href="#"
+              href="https://instagram.com/andestech"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-primary hover:text-primary/80 transition-all hover:scale-125 hover:drop-shadow-[0_0_8px_rgba(0,217,255,0.8)]"
             >
               <Instagram className="w-6 h-6" />
             </a>
             <a
-              href="#"
+              href="https://linkedin.com/company/andestech"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-primary hover:text-primary/80 transition-all hover:scale-125 hover:drop-shadow-[0_0_8px_rgba(0,217,255,0.8)]"
             >
               <Linkedin className="w-6 h-6" />
             </a>
             <a
-              href="#"
+              href="https://wa.me/5492611234567?text=Hola!%20Quiero%20unirme%20a%20AndesTech"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-primary hover:text-primary/80 transition-all hover:scale-125 hover:drop-shadow-[0_0_8px_rgba(0,217,255,0.8)]"
             >
               <MessageCircle className="w-6 h-6" />
             </a>
             <a
-              href="#"
+              href="https://t.me/andestech"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-primary hover:text-primary/80 transition-all hover:scale-125 hover:drop-shadow-[0_0_8px_rgba(0,217,255,0.8)]"
             >
               <Send className="w-6 h-6" />
@@ -96,6 +113,8 @@ export function HeroSection() {
           </div>
         </div>
       </div>
+
+      <RegisterModal isOpen={showRegisterModal} onClose={() => setShowRegisterModal(false)} />
     </section>
   )
 }

@@ -1,9 +1,24 @@
 "use client"
 
+import type React from "react"
+
 import { Button } from "@/components/ui/button"
 import { Mail, MessageCircle, Send, MapPin } from "lucide-react"
+import { useState } from "react"
 
 export function ContactSection() {
+  const [formData, setFormData] = useState({
+    email: "",
+    name: "",
+  })
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    console.log("[v0] Solicitud enviada:", formData)
+    alert(`¡Gracias ${formData.name}! Te contactaremos pronto a ${formData.email}`)
+    setFormData({ email: "", name: "" })
+  }
+
   return (
     <section className="relative py-24 px-4 bg-gradient-to-b from-card/30 to-background">
       <div className="container mx-auto max-w-4xl">
@@ -31,7 +46,9 @@ export function ContactSection() {
                   <span>hola@andestech.com</span>
                 </a>
                 <a
-                  href="#"
+                  href="https://wa.me/5492611234567?text=Hola!%20Quiero%20más%20información%20sobre%20AndesTech"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="w-10 h-10 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center group-hover:shadow-[0_0_20px_rgba(0,217,255,0.4)] transition-all">
@@ -40,7 +57,9 @@ export function ContactSection() {
                   <span>WhatsApp Community</span>
                 </a>
                 <a
-                  href="#"
+                  href="https://t.me/andestech"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="w-10 h-10 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center group-hover:shadow-[0_0_20px_rgba(0,217,255,0.4)] transition-all">
@@ -62,22 +81,28 @@ export function ContactSection() {
               <p className="text-muted-foreground">
                 Completa el formulario y te enviaremos toda la información para que formes parte de AndesTech.
               </p>
-              <div className="space-y-3">
+              <form onSubmit={handleSubmit} className="space-y-3">
                 <input
                   type="email"
+                  required
+                  value={formData.email}
+                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   placeholder="Tu email"
                   className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
                 />
                 <input
                   type="text"
+                  required
+                  value={formData.name}
+                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   placeholder="Tu nombre"
                   className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
                 />
-                <Button className="w-full group relative overflow-hidden">
+                <Button type="submit" className="w-full group relative overflow-hidden">
                   <span className="relative z-10">Enviar Solicitud</span>
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-shimmer" />
                 </Button>
-              </div>
+              </form>
             </div>
           </div>
         </div>
