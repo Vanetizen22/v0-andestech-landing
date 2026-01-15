@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Home, Calendar, MapPin, Users, Award, ExternalLink, ImageIcon } from "lucide-react"
@@ -68,6 +69,11 @@ export default function FestivalPage() {
             <Home className="w-5 h-5" />
             <span className="font-semibold">Volver al Inicio</span>
           </Link>
+          <div className="flex items-center gap-3">
+            <Image src="/andestech-logo.jpg" alt="AndesTech Logo" width={40} height={40} className="object-contain" />
+            <span className="text-xl font-bold">AndesTech Festival</span>
+          </div>
+          <div className="w-32" />
         </div>
       </header>
 

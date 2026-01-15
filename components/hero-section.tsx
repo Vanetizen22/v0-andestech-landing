@@ -1,9 +1,10 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Mountain, Instagram, Linkedin, MessageCircle, Send } from "lucide-react"
+import { Instagram, Linkedin, MessageCircle, Send } from "lucide-react"
 import { CodeBackground } from "@/components/code-background"
 import { useEffect, useState } from "react"
+import Image from "next/image"
 
 export function HeroSection() {
   const [isVisible, setIsVisible] = useState(false)
@@ -43,8 +44,16 @@ export function HeroSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="inline-flex items-center justify-center w-32 h-32 rounded-full bg-card border-2 border-primary/50 shadow-[0_0_50px_rgba(0,217,255,0.3)] animate-float mb-8">
-            <Mountain className="w-16 h-16 text-primary" />
+          <div className="inline-flex items-center justify-center w-48 h-48 rounded-full bg-transparent backdrop-blur mb-8">
+            <Image
+              src="/andestech-logo.jpg"
+              alt="AndesTech Logo"
+              width={192}
+              height={192}
+              className="rounded-full object-contain animate-float"
+              style={{ filter: "drop-shadow(0 0 30px rgba(0, 217, 255, 0.6))" }}
+              priority
+            />
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold text-balance">

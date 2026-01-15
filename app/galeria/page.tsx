@@ -1,7 +1,8 @@
 "use client"
 import { X, ChevronLeft, ChevronRight, Home } from "lucide-react"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 
 const galleryImages = [
   {
@@ -70,6 +71,16 @@ export default function GaleriaPage() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isFullscreen, setIsFullscreen] = useState(false)
 
+  useEffect(() => {
+    const handleKeyPress = (e: KeyboardEvent) => {
+      if (e.key === "ArrowLeft") prevImage()
+      if (e.key === "ArrowRight") nextImage()
+      if (e.key === "Escape") setIsFullscreen(false)
+    }
+    window.addEventListener("keydown", handleKeyPress)
+    return () => window.removeEventListener("keydown", handleKeyPress)
+  }, [currentIndex])
+
   const nextImage = () => {
     setCurrentIndex((prev) => (prev + 1) % galleryImages.length)
   }
@@ -91,9 +102,12 @@ export default function GaleriaPage() {
             <Home className="w-5 h-5" />
             <span className="font-semibold">Volver al Inicio</span>
           </Link>
-          <h1 className="text-2xl font-bold">
-            Galería de <span className="text-primary">Eventos</span>
-          </h1>
+          <div className="flex items-center gap-3">
+            <Image src="/andestech-logo.jpg" alt="AndesTech Logo" width={40} height={40} className="object-contain" />
+            <h1 className="text-2xl font-bold">
+              Galería de <span className="text-primary">Eventos</span>
+            </h1>
+          </div>
           <div className="w-32" />
         </div>
       </header>

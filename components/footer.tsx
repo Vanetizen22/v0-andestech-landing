@@ -1,8 +1,8 @@
 "use client"
 
 import type React from "react"
-
-import { Mountain, Instagram, Linkedin, MessageCircle, Send } from "lucide-react"
+import Image from "next/image"
+import { Instagram, Linkedin, MessageCircle, Send } from "lucide-react"
 
 export function Footer() {
   const links = {
@@ -30,8 +30,8 @@ export function Footer() {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <Mountain className="w-8 h-8 text-primary" />
+            <div className="flex items-center gap-3 mb-4">
+              <Image src="/andestech-logo.jpg" alt="AndesTech Logo" width={48} height={48} className="object-contain" />
               <span className="text-2xl font-bold">AndesTech</span>
             </div>
             <p className="text-muted-foreground text-pretty max-w-md mb-4">
