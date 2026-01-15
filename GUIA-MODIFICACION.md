@@ -8,7 +8,7 @@
 
 **Archivo:** `components/hero-section.tsx`
 
-```tsx
+\`\`\`tsx
 // LÍNEA ~50-60
 <h1 className="text-5xl md:text-7xl font-bold mb-6">
   AndesTech {/* 👈 CAMBIAR AQUÍ */}
@@ -16,7 +16,7 @@
 <p className="text-xl md:text-2xl text-cyan-200/90 mb-8">
   Tu texto aquí {/* 👈 CAMBIAR AQUÍ */}
 </p>
-```
+\`\`\`
 
 ---
 
@@ -24,7 +24,7 @@
 
 **Archivo:** `components/events-section.tsx`
 
-```tsx
+\`\`\`tsx
 // LÍNEA ~20-30
 const events = [
   // ... eventos existentes
@@ -38,7 +38,7 @@ const events = [
     category: "Workshop"                 // 👈 Categoría
   }
 ]
-```
+\`\`\`
 
 ---
 
@@ -46,7 +46,7 @@ const events = [
 
 **Archivo:** `app/globals.css`
 
-```css
+\`\`\`css
 /* LÍNEAS ~10-30 */
 :root {
   --primary: #FF6B6B;        /* 👈 Color principal (botones, acentos) */
@@ -54,7 +54,7 @@ const events = [
   --background: #1A1A2E;     /* 👈 Color de fondo */
   --accent: #16213E;         /* 👈 Color de acento */
 }
-```
+\`\`\`
 
 **Colores recomendados para AndesTech:**
 - Primary: `#00d9ff` (Cyan brillante)
@@ -67,7 +67,7 @@ const events = [
 
 **Archivo:** `components/staff-section.tsx`
 
-```tsx
+\`\`\`tsx
 // LÍNEA ~20-40
 const team = [
   {
@@ -82,7 +82,7 @@ const team = [
     }
   }
 ]
-```
+\`\`\`
 
 ---
 
@@ -90,7 +90,7 @@ const team = [
 
 **Archivo:** `components/stats-section.tsx`
 
-```tsx
+\`\`\`tsx
 // LÍNEA ~15-25
 const stats = [
   {
@@ -103,7 +103,7 @@ const stats = [
   }
   // Agregar más estadísticas...
 ]
-```
+\`\`\`
 
 ---
 
@@ -113,7 +113,7 @@ const stats = [
 
 ### Cambiar campos del formulario:
 
-```tsx
+\`\`\`tsx
 // LÍNEA ~30-50
 <Input 
   placeholder="Tu nombre"    // 👈 Placeholder
@@ -127,11 +127,11 @@ const stats = [
   name="phone"
   type="tel"
 />
-```
+\`\`\`
 
 ### Configurar el envío del formulario:
 
-```tsx
+\`\`\`tsx
 // LÍNEA ~20-25
 async function handleSubmit(e: React.FormEvent) {
   e.preventDefault()
@@ -145,7 +145,7 @@ async function handleSubmit(e: React.FormEvent) {
     body: formData
   })
 }
-```
+\`\`\`
 
 ---
 
@@ -153,7 +153,7 @@ async function handleSubmit(e: React.FormEvent) {
 
 **Archivo:** `components/testimonials-section.tsx`
 
-```tsx
+\`\`\`tsx
 // LÍNEA ~15-30
 const testimonials = [
   {
@@ -164,7 +164,7 @@ const testimonials = [
     rating: 5                         // 👈 Calificación (1-5)
   }
 ]
-```
+\`\`\`
 
 ---
 
@@ -172,7 +172,7 @@ const testimonials = [
 
 **Archivo:** `app/globals.css`
 
-```css
+\`\`\`css
 /* LÍNEA ~100+ (en @keyframes) */
 
 /* Ejemplo: hacer más rápida la animación float */
@@ -181,13 +181,13 @@ const testimonials = [
   /* animation: float 3s ease-in-out infinite; */
   /*                  👆 Cambiar de 6s a 3s */
 }
-```
+\`\`\`
 
 **En componentes:**
-```tsx
+\`\`\`tsx
 // Buscar líneas con 'animate-' y modificar duración
 className="animate-float duration-3000"  // 👈 3 segundos
-```
+\`\`\`
 
 ---
 
@@ -196,7 +196,7 @@ className="animate-float duration-3000"  // 👈 3 segundos
 **Archivo:** `components/footer.tsx`
 
 ### Enlaces del footer:
-```tsx
+\`\`\`tsx
 // LÍNEA ~30-50
 const links = {
   social: [
@@ -209,15 +209,15 @@ const links = {
     { name: "Términos", url: "/terms" }
   ]
 }
-```
+\`\`\`
 
 ### Texto del copyright:
-```tsx
+\`\`\`tsx
 // LÍNEA ~80-90
 <p className="text-center">
   © 2025 AndesTech. Todos los derechos reservados.  {/* 👈 Cambiar aquí */}
 </p>
-```
+\`\`\`
 
 ---
 
@@ -227,7 +227,7 @@ const links = {
 
 **Crear archivo:** `components/mi-nueva-seccion.tsx`
 
-```tsx
+\`\`\`tsx
 export function MiNuevaSeccion() {
   return (
     <section id="mi-seccion" className="py-20 px-4 relative">
@@ -243,13 +243,13 @@ export function MiNuevaSeccion() {
     </section>
   )
 }
-```
+\`\`\`
 
 ### Paso 2: Importar en la página principal
 
 **Archivo:** `app/page.tsx`
 
-```tsx
+\`\`\`tsx
 // LÍNEA ~5-10 (imports)
 import { MiNuevaSeccion } from '@/components/mi-nueva-seccion'
 
@@ -259,7 +259,7 @@ import { MiNuevaSeccion } from '@/components/mi-nueva-seccion'
   <MiNuevaSeccion />  {/* 👈 AGREGAR AQUÍ */}
   {/* ... más secciones ... */}
 </main>
-```
+\`\`\`
 
 ---
 
@@ -267,7 +267,7 @@ import { MiNuevaSeccion } from '@/components/mi-nueva-seccion'
 
 **Archivo:** `app/layout.tsx`
 
-```tsx
+\`\`\`tsx
 // LÍNEA ~5-10
 import { Inter, Roboto } from 'next/font/google'  // 👈 Cambiar fuente
 
@@ -282,7 +282,7 @@ const roboto = Roboto({
   subsets: ['latin'],
   variable: '--font-sans'
 })
-```
+\`\`\`
 
 **Fuentes populares:**
 - `Inter` - Moderna y limpia
@@ -296,7 +296,7 @@ const roboto = Roboto({
 
 **Archivo:** `components/interactive-button.tsx`
 
-```tsx
+\`\`\`tsx
 // LÍNEA ~30-40
 // Intensidad del efecto magnético
 const intensity = 0.3;  // 👈 Aumentar = más magnético (0.1 - 1.0)
@@ -311,13 +311,13 @@ const intensity = 0.3;  // 👈 Aumentar = más magnético (0.1 - 1.0)
     opacity: 0.6        // 👈 Intensidad del brillo (0.0 - 1.0)
   }}
 />
-```
+\`\`\`
 
 ---
 
 ## 📁 Mapa Mental de Modificaciones
 
-```
+\`\`\`
 ¿Qué quieres cambiar?
 │
 ├── 🎨 Apariencia Visual
@@ -341,7 +341,7 @@ const intensity = 0.3;  // 👈 Aumentar = más magnético (0.1 - 1.0)
     ├── Formulario → components/contact-section.tsx
     ├── Enlaces → components/footer.tsx
     └── Navegación → components/hero-section.tsx
-```
+\`\`\`
 
 ---
 
@@ -349,37 +349,37 @@ const intensity = 0.3;  // 👈 Aumentar = más magnético (0.1 - 1.0)
 
 ### Error: "Module not found"
 **Solución:** Verifica que el import sea correcto
-```tsx
+\`\`\`tsx
 // ❌ Incorrecto
 import { Button } from 'components/ui/button'
 
 // ✅ Correcto
 import { Button } from '@/components/ui/button'
-```
+\`\`\`
 
 ---
 
 ### Error: Imagen no se muestra
 **Solución:** Verifica la ruta y que esté en /public
-```tsx
+\`\`\`tsx
 // ❌ Incorrecto
 <img src="/images/logo.png" />  // Si está en public/images/
 
 // ✅ Correcto
 <img src="/logo.png" />  // Si está en public/
-```
+\`\`\`
 
 ---
 
 ### Error: Color no cambia
 **Solución:** Usa variables CSS en lugar de valores directos
-```tsx
+\`\`\`tsx
 // ❌ Menos mantenible
 className="bg-cyan-500"
 
 // ✅ Mejor
 className="bg-primary"  // Usa la variable --primary de globals.css
-```
+\`\`\`
 
 ---
 
@@ -397,11 +397,11 @@ className="bg-primary"  // Usa la variable --primary de globals.css
    - Usa los mismos colores del tema
 
 4. **Comenta tu código**
-   ```tsx
+   \`\`\`tsx
    // 👍 Buena práctica
    // Esta función maneja el envío del formulario
    async function handleSubmit() { ... }
-   ```
+   \`\`\`
 
 ---
 

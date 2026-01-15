@@ -8,7 +8,7 @@ Este proyecto está organizado en una arquitectura modular y escalable, separand
 
 ## 📂 Estructura de Carpetas
 
-```
+\`\`\`
 proyecto-andestech/
 ├── app/                          # 🚀 NÚCLEO DE LA APLICACIÓN (Next.js App Router)
 │   ├── page.tsx                  # Página principal - Orquesta todas las secciones
@@ -55,7 +55,7 @@ proyecto-andestech/
 │
 └── styles/                       # 🎨 ESTILOS ADICIONALES (si los hubiera)
     └── globals.css               # Duplicado de app/globals.css
-```
+\`\`\`
 
 ---
 
@@ -64,7 +64,7 @@ proyecto-andestech/
 ### 1️⃣ Página Principal (`app/page.tsx`)
 **Responsabilidad:** Orquestar todas las secciones de la página
 
-```tsx
+\`\`\`tsx
 // Importa y renderiza todas las secciones en orden
 <main>
   <CodeBackground />      {/* Fondo animado */}
@@ -79,7 +79,7 @@ proyecto-andestech/
   <ContactSection />      {/* Contacto */}
   <Footer />              {/* Footer */}
 </main>
-```
+\`\`\`
 
 **📍 Para modificar:**
 - Orden de las secciones
@@ -93,13 +93,13 @@ proyecto-andestech/
 Cada sección es un componente independiente y reutilizable:
 
 #### **Hero Section** (`components/hero-section.tsx`)
-```tsx
+\`\`\`tsx
 // Contiene:
 - Logo animado con efecto float
 - Título principal "AndesTech"
 - Descripción
 - Botones CTA con animación de cursor
-```
+\`\`\`
 
 **📍 Para modificar:**
 - Texto del hero
@@ -109,7 +109,7 @@ Cada sección es un componente independiente y reutilizable:
 ---
 
 #### **About Section** (`components/about-section.tsx`)
-```tsx
+\`\`\`tsx
 // Contiene:
 - Título "¿Qué es AndesTech?"
 - 4 características principales en grid:
@@ -117,7 +117,7 @@ Cada sección es un componente independiente y reutilizable:
   * Aprendizaje Continuo
   * Networking
   * Innovación
-```
+\`\`\`
 
 **📍 Para modificar:**
 - Características de la comunidad
@@ -127,13 +127,13 @@ Cada sección es un componente independiente y reutilizable:
 ---
 
 #### **Events Section** (`components/events-section.tsx`)
-```tsx
+\`\`\`tsx
 // Contiene:
 - Tarjetas de eventos próximos
 - Fecha, hora, ubicación
 - Botones de registro
 - Imágenes de eventos
-```
+\`\`\`
 
 **📍 Para modificar:**
 - Eventos próximos
@@ -144,12 +144,12 @@ Cada sección es un componente independiente y reutilizable:
 ---
 
 #### **Contact Section** (`components/contact-section.tsx`)
-```tsx
+\`\`\`tsx
 // Contiene:
 - Formulario de contacto (nombre, email, mensaje)
 - Validación de campos
 - Botón de envío con animación
-```
+\`\`\`
 
 **📍 Para modificar:**
 - Campos del formulario
@@ -161,10 +161,10 @@ Cada sección es un componente independiente y reutilizable:
 ### 3️⃣ Componentes Visuales Especiales
 
 #### **Code Background** (`components/code-background.tsx`)
-```tsx
+\`\`\`tsx
 // Efecto visual de fondo con código flotante
 // Animación continua de scroll
-```
+\`\`\`
 
 **📍 Para modificar:**
 - Velocidad de animación
@@ -174,13 +174,13 @@ Cada sección es un componente independiente y reutilizable:
 ---
 
 #### **Interactive Button** (`components/interactive-button.tsx`)
-```tsx
+\`\`\`tsx
 // Botón con efectos interactivos:
 - Seguimiento magnético del cursor
 - Efecto de brillo que sigue al mouse
 - Animación de scale en hover
 - Efecto de partículas/shine
-```
+\`\`\`
 
 **📍 Para modificar:**
 - Intensidad del efecto magnético
@@ -212,7 +212,7 @@ Biblioteca de componentes reutilizables de shadcn/ui:
 
 ### Tema y Colores (`app/globals.css`)
 
-```css
+\`\`\`css
 :root {
   /* 🎨 Colores Principales */
   --background: #0a0f1e;           /* Azul muy oscuro */
@@ -225,7 +225,7 @@ Biblioteca de componentes reutilizables de shadcn/ui:
   /* 📏 Bordes */
   --radius: 0.5rem;                /* Radio de bordes */
 }
-```
+\`\`\`
 
 **📍 Para modificar colores:**
 1. Abre `app/globals.css`
@@ -236,7 +236,7 @@ Biblioteca de componentes reutilizables de shadcn/ui:
 
 ### Animaciones (`app/globals.css`)
 
-```css
+\`\`\`css
 /* Animaciones disponibles: */
 @keyframes float { ... }          /* Flotación suave */
 @keyframes glow { ... }           /* Brillo pulsante */
@@ -244,14 +244,14 @@ Biblioteca de componentes reutilizables de shadcn/ui:
 @keyframes shimmer { ... }        /* Efecto shimmer */
 @keyframes pulse-glow { ... }     /* Pulso de brillo */
 @keyframes slide-up { ... }       /* Entrada desde abajo */
-```
+\`\`\`
 
 **📍 Para usar en componentes:**
-```tsx
+\`\`\`tsx
 className="animate-float"
 className="animate-glow"
 className="animate-shimmer"
-```
+\`\`\`
 
 ---
 
@@ -270,7 +270,7 @@ Este proyecto es **100% frontend** (Static Site). No hay:
 Si necesitas agregar funcionalidad backend:
 
 1. **API Routes** (`app/api/`)
-```
+\`\`\`
 app/
 └── api/
     ├── contact/
@@ -279,26 +279,26 @@ app/
     │   └── route.ts          # GET /api/events
     └── subscribe/
         └── route.ts          # POST /api/subscribe
-```
+\`\`\`
 
 2. **Server Actions** (en componentes)
-```tsx
+\`\`\`tsx
 // components/contact-section.tsx
 'use server'
 
 async function submitContact(formData: FormData) {
   // Lógica de servidor
 }
-```
+\`\`\`
 
 3. **Database** (Supabase/Neon)
-```
+\`\`\`
 lib/
 └── db/
     ├── supabase.ts           # Cliente de Supabase
     ├── queries.ts            # Queries de base de datos
     └── types.ts              # Types de base de datos
-```
+\`\`\`
 
 ---
 
@@ -315,7 +315,7 @@ lib/
 ### Ejemplo 2: Agregar Nueva Sección
 
 1. Crea `components/nueva-seccion.tsx`
-```tsx
+\`\`\`tsx
 export function NuevaSeccion() {
   return (
     <section className="py-20">
@@ -323,17 +323,17 @@ export function NuevaSeccion() {
     </section>
   )
 }
-```
+\`\`\`
 
 2. Importa en `app/page.tsx`
-```tsx
+\`\`\`tsx
 import { NuevaSeccion } from '@/components/nueva-seccion'
-```
+\`\`\`
 
 3. Agrega en el render
-```tsx
+\`\`\`tsx
 <NuevaSeccion />
-```
+\`\`\`
 
 ---
 
@@ -342,7 +342,7 @@ import { NuevaSeccion } from '@/components/nueva-seccion'
 1. Abre `components/events-section.tsx`
 2. Busca el array de eventos
 3. Modifica/agrega evento:
-```tsx
+\`\`\`tsx
 {
   title: "Nuevo Workshop",
   date: "2025-02-15",
@@ -351,7 +351,7 @@ import { NuevaSeccion } from '@/components/nueva-seccion'
   description: "Workshop de Next.js",
   image: "/new-event.jpg"
 }
-```
+\`\`\`
 
 ---
 
