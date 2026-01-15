@@ -1,0 +1,60 @@
+import { Card } from "@/components/ui/card"
+import { Code2, Users, Lightbulb, Calendar } from "lucide-react"
+
+export function AboutSection() {
+  const features = [
+    {
+      icon: Code2,
+      title: "Desarrollo Web",
+      description: "Aprende las últimas tecnologías y frameworks para desarrollo web moderno.",
+    },
+    {
+      icon: Users,
+      title: "Networking",
+      description: "Conecta con profesionales y entusiastas de la tecnología en tu región.",
+    },
+    {
+      icon: Lightbulb,
+      title: "Innovación",
+      description: "Descubre nuevas ideas y proyectos que están transformando la industria.",
+    },
+    {
+      icon: Calendar,
+      title: "Eventos Regulares",
+      description: "Participa en meetups, talleres y conferencias organizadas por la comunidad.",
+    },
+  ]
+
+  return (
+    <section className="py-20 px-4 relative">
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-card/30 to-background" />
+
+      <div className="container mx-auto relative z-10">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">
+            ¿Qué es <span className="text-primary">AndesTech</span>?
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
+            Somos una comunidad apasionada por la tecnología, dedicada a crear espacios de aprendizaje, colaboración e
+            innovación para desarrolladores, diseñadores y profesionales del sector tecnológico.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {features.map((feature, index) => (
+            <Card
+              key={index}
+              className="p-6 bg-card/50 backdrop-blur border-primary/20 hover:border-primary/50 transition-all hover:shadow-[0_0_30px_rgba(0,217,255,0.2)] group"
+            >
+              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                <feature.icon className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+              <p className="text-muted-foreground text-pretty">{feature.description}</p>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
