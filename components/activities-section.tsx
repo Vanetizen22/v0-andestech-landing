@@ -8,14 +8,14 @@ export function ActivitiesSection() {
       icon: Coffee,
       title: "/birras",
       subtitle: "Infraestructura & Telco",
-      description: "Encuentros informales para discutir sobre infraestructura, cloud computing y telecomunicaciones.",
+      description: "Encuentros de la comunidad de infraestructura donde compartimos experiencias sobre redes, cloud, telecomunicaciones y operaciones reales en producción, en un ambiente distendido.",
       slug: "birras",
     },
     {
       icon: Code,
       title: "devcafé",
       subtitle: "Desarrollo de software",
-      description: "Sesiones de coding, pair programming y discusiones sobre las mejores prácticas de desarrollo.",
+      description: "Un espacio para la comunidad dev donde exploramos nuevas herramientas, compartimos proyectos y aprendemos sobre programación, arquitectura y tecnologías emergentes.",
       slug: "devcafe",
     },
   ]
