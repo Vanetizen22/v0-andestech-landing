@@ -28,18 +28,18 @@ export function FestivalSection() {
             <div className="grid md:grid-cols-2 gap-0">
               <div className="relative h-64 md:h-auto">
                 <img
-                  src="/tech-conference-audience.png"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ANDES%20TECH%20PRINCIPAL-Jm0xMOHAMArTNGKVHz25NwLG6M8bS4.jpeg"
                   alt="AndesTech Festival"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-background/80 to-transparent md:hidden" />
               </div>
               <div className="p-5 sm:p-8 md:p-12 flex flex-col justify-center">
-                <h3 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">Próxima Edición 2025</h3>
+                <h3 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">Próxima Edición 2026</h3>
                 <div className="space-y-2 sm:space-y-3 mb-4 sm:mb-6">
                   <div className="flex items-center gap-2 sm:gap-3 text-muted-foreground text-sm sm:text-base">
                     <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0" />
-                    <span>Fecha a confirmar - Segundo semestre 2025</span>
+                    <span>Fecha a confirmar - Segundo semestre 2026</span>
                   </div>
                   <div className="flex items-center gap-2 sm:gap-3 text-muted-foreground text-sm sm:text-base">
                     <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0" />
@@ -47,7 +47,7 @@ export function FestivalSection() {
                   </div>
                   <div className="flex items-center gap-2 sm:gap-3 text-muted-foreground text-sm sm:text-base">
                     <Users className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0" />
-                    <span>+500 asistentes esperados</span>
+                    <span>+1500 asistentes esperados</span>
                   </div>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
@@ -56,7 +56,7 @@ export function FestivalSection() {
                     onClick={() => window.open("https://lu.ma/andestech-festival", "_blank")}
                     className="group"
                   >
-                    Registrarme
+                    Registrarme<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"><path d="m9 18 6-6-6-6"></path></svg>
                     <ChevronRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                   </Button>
                   <Button size="lg" variant="outline" asChild>
