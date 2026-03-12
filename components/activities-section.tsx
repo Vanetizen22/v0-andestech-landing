@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card"
-import { Coffee, Code, ArrowRight } from "lucide-react"
+import { Coffee, Beer, ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 export function ActivitiesSection() {
