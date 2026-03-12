@@ -45,27 +45,27 @@ export function PartnersSection() {
   }, [])
 
   return (
-    <section id="sponsors" className="py-20 px-4 bg-background overflow-hidden">
+    <section id="sponsors" className="py-12 sm:py-20 px-4 bg-background overflow-hidden">
       <div className="container mx-auto max-w-7xl">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-balance px-2">
             Colaboradores y <span className="text-primary">Sponsors</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
-            Organizaciones y empresas que confían en nosotros
+          <p className="text-base sm:text-xl text-muted-foreground max-w-3xl mx-auto text-pretty px-2">
+            Organizaciones y empresas que confian en nosotros
           </p>
         </div>
 
         <div className="relative">
           <div
             ref={scrollRef}
-            className="flex gap-12 overflow-hidden items-center py-8"
+            className="flex gap-6 sm:gap-12 overflow-hidden items-center py-4 sm:py-8"
             style={{ scrollBehavior: "auto" }}
           >
             {duplicatedPartners.map((partner, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-48 h-24 relative bg-card/50 rounded-lg border border-primary/20 hover:border-primary/50 transition-all hover:shadow-[0_0_30px_rgba(0,217,255,0.3)] p-4 flex items-center justify-center group"
+                className="flex-shrink-0 w-32 h-16 sm:w-48 sm:h-24 relative bg-card/50 rounded-lg border border-primary/20 hover:border-primary/50 transition-all hover:shadow-[0_0_30px_rgba(0,217,255,0.3)] p-2 sm:p-4 flex items-center justify-center group"
               >
                 <Image
                   src={partner.logo || "/placeholder.svg"}
@@ -78,21 +78,19 @@ export function PartnersSection() {
             ))}
           </div>
 
-          {/* Gradientes de desvanecimiento en los bordes */}
-          <div className="absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-background to-transparent pointer-events-none" />
-          <div className="absolute top-0 right-0 w-32 h-full bg-gradient-to-l from-background to-transparent pointer-events-none" />
+          <div className="absolute top-0 left-0 w-16 sm:w-32 h-full bg-gradient-to-r from-background to-transparent pointer-events-none" />
+          <div className="absolute top-0 right-0 w-16 sm:w-32 h-full bg-gradient-to-l from-background to-transparent pointer-events-none" />
         </div>
 
-        {/* Call to action para sponsors */}
-        <div className="mt-16 text-center">
-          <div className="p-8 bg-gradient-to-br from-primary/10 to-primary/5 border border-primary/30 rounded-lg max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold mb-3">¿Querés ser sponsor?</h3>
-            <p className="text-muted-foreground mb-6 text-pretty">
-              Apoyá a la comunidad tecnológica y dale visibilidad a tu marca en nuestros eventos
+        <div className="mt-10 sm:mt-16 text-center">
+          <div className="p-5 sm:p-8 bg-gradient-to-br from-primary/10 to-primary/5 border border-primary/30 rounded-lg max-w-2xl mx-auto">
+            <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-3">Queres ser sponsor?</h3>
+            <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6 text-pretty">
+              Apoya a la comunidad tecnologica y dale visibilidad a tu marca en nuestros eventos
             </p>
             <a
               href="mailto:sponsors@andestech.dev"
-              className="inline-block px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:shadow-[0_0_20px_rgba(0,217,255,0.5)] transition-all hover:scale-105"
+              className="inline-block px-6 sm:px-8 py-2.5 sm:py-3 bg-primary text-primary-foreground rounded-lg font-semibold text-sm sm:text-base hover:shadow-[0_0_20px_rgba(0,217,255,0.5)] transition-all hover:scale-105"
             >
               Contactanos
             </a>
