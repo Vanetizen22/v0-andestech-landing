@@ -8,14 +8,14 @@ export function ActivitiesSection() {
       icon: Coffee,
       title: "/birras",
       subtitle: "Infraestructura & Telco",
-      description: "Encuentros informales para discutir sobre infraestructura, cloud computing y telecomunicaciones.",
+      description: "Encuentros de la comunidad de infraestructura donde compartimos experiencias sobre redes, cloud, telecomunicaciones y operaciones reales en producción, en un ambiente distendido.",
       slug: "birras",
     },
     {
       icon: Code,
       title: "devcafé",
       subtitle: "Desarrollo de software",
-      description: "Sesiones de coding, pair programming y discusiones sobre las mejores prácticas de desarrollo.",
+      description: "Un espacio para la comunidad dev donde exploramos nuevas herramientas, compartimos proyectos y aprendemos sobre programación, arquitectura y tecnologías emergentes.",
       slug: "devcafe",
     },
   ]
@@ -25,7 +25,7 @@ export function ActivitiesSection() {
       <div className="container mx-auto">
         <div className="text-center mb-10 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-balance px-2">
-            Que <span className="text-primary">Hacemos</span>?
+            ¿Que <span className="text-primary">Hacemos</span>?
           </h2>
           <p className="text-base sm:text-xl text-muted-foreground max-w-3xl mx-auto text-pretty px-2">
             Espacios de networking y formación en diversas áreas tecnológicas
