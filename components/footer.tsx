@@ -31,7 +31,7 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mb-6 sm:mb-8">
           <div className="col-span-2 md:col-span-2">
             <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
-              <Image src="/andestech-logo-white.png" alt="AndesTech Logo" width={40} height={40} className="object-contain w-8 h-8 sm:w-12 sm:h-12" />
+              <Image src="/andestech-logo-white.png" alt="AndesTech Logo" width={40} height={40} className="object-contain w-8 sm:w-12 h-auto" />
               <span className="text-lg sm:text-2xl font-bold">AndesTech</span>
             </div>
             <p className="text-sm sm:text-base text-muted-foreground text-pretty max-w-md mb-4">
