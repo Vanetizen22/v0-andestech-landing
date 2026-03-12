@@ -24,7 +24,7 @@ export function ContactSection() {
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-8 sm:mb-12">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 px-2">
-            Listo para <span className="text-primary">Conectar</span>?
+            ¿Listo para <span className="text-primary">Conectar</span>?
           </h2>
           <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto px-2">
             Unite a nuestra comunidad y comenza a crecer junto a los mejores profesionales tech de los Andes
