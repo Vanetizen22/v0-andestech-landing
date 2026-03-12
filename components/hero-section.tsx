@@ -68,7 +68,7 @@ export function HeroSection() {
           <div className="flex flex-col gap-3 sm:gap-4 justify-center items-center pt-2 sm:pt-4 px-4">
             <Button
               size="lg"
-              onClick={() => window.open("https://chat.whatsapp.com/XXXXXXXXXXXXXX", "_blank")}
+              onClick={() => window.open("https://linktr.ee/andestech", "_blank")}
               className="group relative text-base sm:text-lg px-6 sm:px-8 w-full sm:w-auto animate-pulse-glow hover:scale-105 transition-transform duration-300 overflow-hidden"
             >
               <span className="relative z-10">Unete a la Comunidad</span>
@@ -86,7 +86,7 @@ export function HeroSection() {
 
           <div className="flex gap-8 sm:gap-6 justify-center items-center pt-6 sm:pt-8">
             <a
-              href="https://instagram.com/andestech"
+              href="https://www.instagram.com/andes.tech_"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary hover:text-primary/80 transition-all hover:scale-125 hover:drop-shadow-[0_0_8px_rgba(0,217,255,0.8)] p-2"
@@ -94,7 +94,7 @@ export function HeroSection() {
               <Instagram className="w-7 h-7 sm:w-6 sm:h-6" />
             </a>
             <a
-              href="https://linkedin.com/company/andestech"
+              href="https://www.linkedin.com/company/andestech1"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary hover:text-primary/80 transition-all hover:scale-125 hover:drop-shadow-[0_0_8px_rgba(0,217,255,0.8)] p-2"
@@ -102,7 +102,7 @@ export function HeroSection() {
               <Linkedin className="w-7 h-7 sm:w-6 sm:h-6" />
             </a>
             <a
-              href="https://wa.me/5492611234567?text=Hola!%20Quiero%20unirme%20a%20AndesTech"
+              href="https://chat.whatsapp.com/BkfcHYpMJIiGSBnibubKGU"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary hover:text-primary/80 transition-all hover:scale-125 hover:drop-shadow-[0_0_8px_rgba(0,217,255,0.8)] p-2"
@@ -110,7 +110,7 @@ export function HeroSection() {
               <MessageCircle className="w-7 h-7 sm:w-6 sm:h-6" />
             </a>
             <a
-              href="https://t.me/andestech"
+              href="https://t.me/devcafemdz#"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary hover:text-primary/80 transition-all hover:scale-125 hover:drop-shadow-[0_0_8px_rgba(0,217,255,0.8)] p-2"
