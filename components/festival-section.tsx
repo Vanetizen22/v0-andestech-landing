@@ -53,14 +53,11 @@ export function FestivalSection() {
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                   <Button
                     size="lg"
-                    onClick={() => window.open("https://lu.ma/andestech-festival", "_blank")}
-                    className="group"
+                    variant="secondary"
+                    disabled
+                    className="cursor-not-allowed opacity-70"
                   >
-                    Registrarme<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"><path d="m9 18 6-6-6-6"></path></svg>
-                    <ChevronRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                  <Button size="lg" variant="outline" asChild>
-                    <Link href="/festival">Más Información</Link>
+                    Próximamente más información
                   </Button>
                 </div>
               </div>
