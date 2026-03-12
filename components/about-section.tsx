@@ -26,7 +26,7 @@ export function AboutSection() {
   ]
 
   return (
-    <section className="py-20 px-4 relative">
+    <section id="about" className="py-20 px-4 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-card/30 to-background" />
 
       <div className="container mx-auto relative z-10">
