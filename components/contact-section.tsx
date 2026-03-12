@@ -37,16 +37,15 @@ export function ContactSection() {
               <h3 className="text-xl sm:text-2xl font-bold">Contactanos</h3>
               <div className="space-y-3">
                 <a
-                  href="mailto:hola@andestech.com"
+                  href="mailto:lautaroceledon6@gmail.com"
                   className="flex items-center gap-3 text-sm sm:text-base text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center group-hover:shadow-[0_0_20px_rgba(0,217,255,0.4)] transition-all flex-shrink-0">
                     <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
-                  </div>
-                  <span>hola@andestech.com</span>
+                  </div>lautaroceledon6@gmail.com</span>
                 </a>
                 <a
-                  href="https://wa.me/5492611234567?text=Hola!%20Quiero%20más%20información%20sobre%20AndesTech"
+                  href="https://chat.whatsapp.com/BkfcHYpMJIiGSBnibubKGU?text=Hola!%20Quiero%20más%20información%20sobre%20AndesTech"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-sm sm:text-base text-muted-foreground hover:text-primary transition-colors group"
@@ -57,7 +56,7 @@ export function ContactSection() {
                   <span>WhatsApp Community</span>
                 </a>
                 <a
-                  href="https://t.me/andestech"
+                  href="https://t.me/devcafemdz#"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-sm sm:text-base text-muted-foreground hover:text-primary transition-colors group"
@@ -71,7 +70,7 @@ export function ContactSection() {
                   <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center flex-shrink-0">
                     <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
                   </div>
-                  <span>Mendoza & San Juan, Argentina</span>
+                  <span>Mendoza, Argentina</span>
                 </div>
               </div>
             </div>
