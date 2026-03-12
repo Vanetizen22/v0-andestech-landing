@@ -45,7 +45,7 @@ export function PartnersSection() {
   }, [])
 
   return (
-    <section className="py-20 px-4 bg-background overflow-hidden">
+    <section id="sponsors" className="py-20 px-4 bg-background overflow-hidden">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">

@@ -54,8 +54,13 @@ export function EventsSection() {
               className="group bg-card border border-border rounded-lg overflow-hidden hover-lift"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="relative h-48 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                <Calendar className="w-16 h-16 text-primary/40" />
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src={event.image || "/placeholder.svg"}
+                  alt={event.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
               </div>
               <div className="p-6 space-y-4">
                 <h3 className="text-xl font-bold group-hover:text-primary transition-colors">{event.title}</h3>
