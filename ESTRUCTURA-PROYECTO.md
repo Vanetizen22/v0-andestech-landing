@@ -407,3 +407,4 @@ import { NuevaSeccion } from '@/components/nueva-seccion'
 ---
 
 **¿Necesitas ayuda?** Abre un issue o consulta la documentación de Next.js.
+**CRÉDITOS MARIA EUGENIA OYARSE. MENDOZA ARGENTINA.
