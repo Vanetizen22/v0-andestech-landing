@@ -20,28 +20,28 @@ export function ContactSection() {
   }
 
   return (
-    <section className="relative py-24 px-4 bg-gradient-to-b from-card/30 to-background">
+    <section className="relative py-12 sm:py-24 px-4 bg-gradient-to-b from-card/30 to-background">
       <div className="container mx-auto max-w-4xl">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            ¿Listo para <span className="text-primary">Conectar</span>?
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 px-2">
+            Listo para <span className="text-primary">Conectar</span>?
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Únete a nuestra comunidad y comienza a crecer junto a los mejores profesionales tech de los Andes
+          <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto px-2">
+            Unite a nuestra comunidad y comenza a crecer junto a los mejores profesionales tech de los Andes
           </p>
         </div>
 
-        <div className="bg-card border border-border rounded-lg p-8 md:p-12 space-y-8">
-          <div className="grid md:grid-cols-2 gap-6">
+        <div className="bg-card border border-border rounded-lg p-5 sm:p-8 md:p-12 space-y-6 sm:space-y-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-4">
-              <h3 className="text-2xl font-bold">Contáctanos</h3>
+              <h3 className="text-xl sm:text-2xl font-bold">Contactanos</h3>
               <div className="space-y-3">
                 <a
                   href="mailto:hola@andestech.com"
-                  className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors group"
+                  className="flex items-center gap-3 text-sm sm:text-base text-muted-foreground hover:text-primary transition-colors group"
                 >
-                  <div className="w-10 h-10 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center group-hover:shadow-[0_0_20px_rgba(0,217,255,0.4)] transition-all">
-                    <Mail className="w-5 h-5 text-primary" />
+                  <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center group-hover:shadow-[0_0_20px_rgba(0,217,255,0.4)] transition-all flex-shrink-0">
+                    <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
                   </div>
                   <span>hola@andestech.com</span>
                 </a>
@@ -49,10 +49,10 @@ export function ContactSection() {
                   href="https://wa.me/5492611234567?text=Hola!%20Quiero%20más%20información%20sobre%20AndesTech"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors group"
+                  className="flex items-center gap-3 text-sm sm:text-base text-muted-foreground hover:text-primary transition-colors group"
                 >
-                  <div className="w-10 h-10 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center group-hover:shadow-[0_0_20px_rgba(0,217,255,0.4)] transition-all">
-                    <MessageCircle className="w-5 h-5 text-primary" />
+                  <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center group-hover:shadow-[0_0_20px_rgba(0,217,255,0.4)] transition-all flex-shrink-0">
+                    <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
                   </div>
                   <span>WhatsApp Community</span>
                 </a>
@@ -60,16 +60,16 @@ export function ContactSection() {
                   href="https://t.me/andestech"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors group"
+                  className="flex items-center gap-3 text-sm sm:text-base text-muted-foreground hover:text-primary transition-colors group"
                 >
-                  <div className="w-10 h-10 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center group-hover:shadow-[0_0_20px_rgba(0,217,255,0.4)] transition-all">
-                    <Send className="w-5 h-5 text-primary" />
+                  <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center group-hover:shadow-[0_0_20px_rgba(0,217,255,0.4)] transition-all flex-shrink-0">
+                    <Send className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
                   </div>
                   <span>Telegram Channel</span>
                 </a>
-                <div className="flex items-center gap-3 text-muted-foreground">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center">
-                    <MapPin className="w-5 h-5 text-primary" />
+                <div className="flex items-center gap-3 text-sm sm:text-base text-muted-foreground">
+                  <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
                   </div>
                   <span>Mendoza & San Juan, Argentina</span>
                 </div>
@@ -77,9 +77,9 @@ export function ContactSection() {
             </div>
 
             <div className="space-y-4">
-              <h3 className="text-2xl font-bold">Únete Ahora</h3>
-              <p className="text-muted-foreground">
-                Completa el formulario y te enviaremos toda la información para que formes parte de AndesTech.
+              <h3 className="text-xl sm:text-2xl font-bold">Unite Ahora</h3>
+              <p className="text-sm sm:text-base text-muted-foreground">
+                Completa el formulario y te enviaremos toda la informacion para que formes parte de AndesTech.
               </p>
               <form onSubmit={handleSubmit} className="space-y-3">
                 <input
@@ -88,7 +88,7 @@ export function ContactSection() {
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   placeholder="Tu email"
-                  className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                  className="w-full px-4 py-2.5 sm:py-3 text-sm sm:text-base bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
                 />
                 <input
                   type="text"
@@ -96,7 +96,7 @@ export function ContactSection() {
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   placeholder="Tu nombre"
-                  className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                  className="w-full px-4 py-2.5 sm:py-3 text-sm sm:text-base bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
                 />
                 <Button type="submit" className="w-full group relative overflow-hidden">
                   <span className="relative z-10">Enviar Solicitud</span>
