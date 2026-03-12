@@ -76,34 +76,7 @@ export function ContactSection() {
               </div>
             </div>
 
-            <div className="space-y-4">
-              <h3 className="text-xl sm:text-2xl font-bold">Unite Ahora</h3>
-              <p className="text-sm sm:text-base text-muted-foreground">
-                Completa el formulario y te enviaremos toda la informacion para que formes parte de AndesTech.
-              </p>
-              <form onSubmit={handleSubmit} className="space-y-3">
-                <input
-                  type="email"
-                  required
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  placeholder="Tu email"
-                  className="w-full px-4 py-2.5 sm:py-3 text-sm sm:text-base bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
-                />
-                <input
-                  type="text"
-                  required
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  placeholder="Tu nombre"
-                  className="w-full px-4 py-2.5 sm:py-3 text-sm sm:text-base bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
-                />
-                <Button type="submit" className="w-full group relative overflow-hidden">
-                  <span className="relative z-10">Enviar Solicitud</span>
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-shimmer" />
-                </Button>
-              </form>
-            </div>
+            
           </div>
         </div>
       </div>
