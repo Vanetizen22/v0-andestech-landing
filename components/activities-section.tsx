@@ -5,14 +5,14 @@ import Link from "next/link"
 export function ActivitiesSection() {
   const activities = [
     {
-      icon: Coffee,
+      icon: Beer,
       title: "/birras",
       subtitle: "Infraestructura & Telco",
       description: "Encuentros de la comunidad de infraestructura donde compartimos experiencias sobre redes, cloud, telecomunicaciones y operaciones reales en producción, en un ambiente distendido.",
       slug: "birras",
     },
     {
-      icon: Code,
+      icon: Coffee,
       title: "devcafé",
       subtitle: "Desarrollo de software",
       description: "Un espacio para la comunidad dev donde exploramos nuevas herramientas, compartimos proyectos y aprendemos sobre programación, arquitectura y tecnologías emergentes.",
