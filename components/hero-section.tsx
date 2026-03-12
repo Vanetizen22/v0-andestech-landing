@@ -50,13 +50,13 @@ export function HeroSection() {
               alt="AndesTech Logo"
               width={192}
               height={192}
-              className="w-full h-full object-contain animate-float"
+              className="object-contain animate-float my-0 mx-0 leading-[0.2rem] text-justify h-56 w-max rounded-lg"
               style={{ filter: "drop-shadow(0 0 30px rgba(0, 217, 255, 0.6))" }}
               priority
             />
           </div>
 
-          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-balance px-2">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-balance px-[7px]">
             Bienvenido a la comunidad de <span className="text-primary animate-glow">AndesTech</span>
           </h1>
 
