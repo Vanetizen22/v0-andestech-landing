@@ -6,14 +6,14 @@ export function ActivitiesSection() {
   const activities = [
     {
       icon: Beer,
-      title: "/birras",
+      title: "/Birras",
       subtitle: "Infraestructura & Telco",
       description: "Encuentros de la comunidad de infraestructura donde compartimos experiencias sobre redes, cloud, telecomunicaciones y operaciones reales en producción, en un ambiente distendido.",
       slug: "birras",
     },
     {
       icon: Coffee,
-      title: "devcafé",
+      title: "DevCafé",
       subtitle: "Desarrollo de software",
       description: "Un espacio para la comunidad dev donde exploramos nuevas herramientas, compartimos proyectos y aprendemos sobre programación, arquitectura y tecnologías emergentes.",
       slug: "devcafe",
