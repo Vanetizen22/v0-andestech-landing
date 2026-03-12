@@ -7,7 +7,7 @@ const stats = [
     icon: Users,
     value: "500+",
     label: "Miembros Activos",
-    description: "Desarrolladores y entusiastas tech",
+    description: "Desarrolladores ingenieros, estudiantes y entusiastas tech, ",
   },
   {
     icon: Calendar,
@@ -23,7 +23,7 @@ const stats = [
   },
   {
     icon: Award,
-    value: "20+",
+    value: "60+",
     label: "Speakers Invitados",
     description: "Expertos de la industria tech",
   },
@@ -38,7 +38,7 @@ export function StatsSection() {
             Nuestra <span className="text-primary">Comunidad</span> en Numeros
           </h2>
           <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto px-2">
-            Creciendo juntos y construyendo el futuro de la tecnología en los Andes
+            Creciendo juntos y construyendo el futuro de la tecnología en el oeste de la Argentina
           </p>
         </div>
 
