@@ -7,17 +7,17 @@ import Link from "next/link"
 
 export function FestivalSection() {
   return (
-    <section className="py-20 px-4 bg-gradient-to-b from-primary/5 to-background" id="festival">
+    <section className="py-12 sm:py-20 px-4 bg-gradient-to-b from-primary/5 to-background" id="festival">
       <div className="container mx-auto">
-        <div className="text-center mb-12">
-          <div className="inline-block px-4 py-2 bg-primary/20 rounded-full mb-4">
-            <span className="text-primary font-semibold">Evento Principal</span>
+        <div className="text-center mb-8 sm:mb-12">
+          <div className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 bg-primary/20 rounded-full mb-3 sm:mb-4">
+            <span className="text-primary font-semibold text-sm sm:text-base">Evento Principal</span>
           </div>
-          <h2 className="text-4xl md:text-6xl font-bold mb-4 text-balance">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 text-balance px-2">
             <span className="text-primary">AndesTech</span> Festival
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
-            El evento tecnológico más grande del oeste argentino. Una o dos veces al año reunimos a toda la comunidad
+          <p className="text-base sm:text-xl text-muted-foreground max-w-3xl mx-auto text-pretty px-2">
+            El evento tecnologico más grande del oeste argentino. Una o dos veces al año reunimos a toda la comunidad
             tech.
           </p>
         </div>
@@ -34,23 +34,23 @@ export function FestivalSection() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-background/80 to-transparent md:hidden" />
               </div>
-              <div className="p-8 md:p-12 flex flex-col justify-center">
-                <h3 className="text-3xl font-bold mb-4">Próxima Edición 2025</h3>
-                <div className="space-y-3 mb-6">
-                  <div className="flex items-center gap-3 text-muted-foreground">
-                    <Calendar className="w-5 h-5 text-primary" />
+              <div className="p-5 sm:p-8 md:p-12 flex flex-col justify-center">
+                <h3 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">Próxima Edición 2025</h3>
+                <div className="space-y-2 sm:space-y-3 mb-4 sm:mb-6">
+                  <div className="flex items-center gap-2 sm:gap-3 text-muted-foreground text-sm sm:text-base">
+                    <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0" />
                     <span>Fecha a confirmar - Segundo semestre 2025</span>
                   </div>
-                  <div className="flex items-center gap-3 text-muted-foreground">
-                    <MapPin className="w-5 h-5 text-primary" />
+                  <div className="flex items-center gap-2 sm:gap-3 text-muted-foreground text-sm sm:text-base">
+                    <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0" />
                     <span>Mendoza, Argentina</span>
                   </div>
-                  <div className="flex items-center gap-3 text-muted-foreground">
-                    <Users className="w-5 h-5 text-primary" />
+                  <div className="flex items-center gap-2 sm:gap-3 text-muted-foreground text-sm sm:text-base">
+                    <Users className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0" />
                     <span>+500 asistentes esperados</span>
                   </div>
                 </div>
-                <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                   <Button
                     size="lg"
                     onClick={() => window.open("https://lu.ma/andestech-festival", "_blank")}
@@ -68,24 +68,24 @@ export function FestivalSection() {
           </Card>
 
           {/* Stats Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mb-6 sm:mb-8">
             {[
               { label: "Charlas", value: "20+" },
               { label: "Speakers", value: "30+" },
               { label: "Workshops", value: "8" },
               { label: "Horas", value: "12" },
             ].map((stat, index) => (
-              <Card key={index} className="p-6 text-center bg-gradient-to-br from-primary/10 to-card border-primary/30">
-                <div className="text-3xl font-bold text-primary mb-1">{stat.value}</div>
-                <div className="text-sm text-muted-foreground">{stat.label}</div>
+              <Card key={index} className="p-4 sm:p-6 text-center bg-gradient-to-br from-primary/10 to-card border-primary/30">
+                <div className="text-2xl sm:text-3xl font-bold text-primary mb-1">{stat.value}</div>
+                <div className="text-xs sm:text-sm text-muted-foreground">{stat.label}</div>
               </Card>
             ))}
           </div>
 
           {/* Previous Editions */}
-          <Card className="p-8 bg-card/50 border-primary/30">
-            <div className="flex items-center justify-between mb-6">
-              <h3 className="text-2xl font-bold">Ediciones Anteriores</h3>
+          <Card className="p-4 sm:p-8 bg-card/50 border-primary/30">
+            <div className="flex items-center justify-between mb-4 sm:mb-6">
+              <h3 className="text-xl sm:text-2xl font-bold">Ediciones Anteriores</h3>
               <Link href="/festival#ediciones" className="text-primary hover:text-primary/80 flex items-center gap-2">
                 Ver todas
                 <ChevronRight className="w-4 h-4" />

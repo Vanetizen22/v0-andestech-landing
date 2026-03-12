@@ -27,18 +27,18 @@ export function Footer() {
 
   return (
     <footer className="border-t border-primary/20 bg-card/50 backdrop-blur">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-          <div className="md:col-span-2">
-            <div className="flex items-center gap-3 mb-4">
-              <Image src="/andestech-logo.jpg" alt="AndesTech Logo" width={48} height={48} className="object-contain" />
-              <span className="text-2xl font-bold">AndesTech</span>
+      <div className="container mx-auto px-4 py-8 sm:py-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mb-6 sm:mb-8">
+          <div className="col-span-2 md:col-span-2">
+            <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
+              <Image src="/andestech-logo-white.png" alt="AndesTech Logo" width={40} height={40} className="object-contain w-8 h-8 sm:w-12 sm:h-12" />
+              <span className="text-lg sm:text-2xl font-bold">AndesTech</span>
             </div>
-            <p className="text-muted-foreground text-pretty max-w-md mb-4">
+            <p className="text-sm sm:text-base text-muted-foreground text-pretty max-w-md mb-4">
               Comunidad tecnológica del oeste de Argentina. Conectamos desarrolladores, diseñadores y entusiastas de la
               tecnología a través de eventos, talleres y networking.
             </p>
-            <div className="flex gap-4">
+            <div className="flex gap-5 sm:gap-4">
               <a
                 href="https://instagram.com/andestech"
                 target="_blank"
@@ -75,14 +75,14 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4 text-primary">Comunidad</h4>
-            <ul className="space-y-2">
+            <h4 className="font-semibold mb-3 sm:mb-4 text-primary text-sm sm:text-base">Comunidad</h4>
+            <ul className="space-y-1.5 sm:space-y-2">
               {links.comunidad.map((link) => (
                 <li key={link.name}>
                   <a
                     href={link.href}
                     onClick={(e) => handleLinkClick(e, link.href, link.external)}
-                    className="text-muted-foreground hover:text-primary transition-colors"
+                    className="text-sm sm:text-base text-muted-foreground hover:text-primary transition-colors"
                     {...(link.external && { target: "_blank", rel: "noopener noreferrer" })}
                   >
                     {link.name}
@@ -93,11 +93,11 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4 text-primary">Contacto</h4>
-            <ul className="space-y-2 text-muted-foreground">
+            <h4 className="font-semibold mb-3 sm:mb-4 text-primary text-sm sm:text-base">Contacto</h4>
+            <ul className="space-y-1.5 sm:space-y-2 text-sm sm:text-base text-muted-foreground">
               <li>Mendoza, Argentina</li>
               <li>
-                <a href="mailto:info@andestech.com" className="hover:text-primary transition-colors">
+                <a href="mailto:info@andestech.com" className="hover:text-primary transition-colors break-all">
                   info@andestech.com
                 </a>
               </li>
@@ -105,8 +105,8 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-primary/20 text-center text-muted-foreground">
-          <p>© 2025 AndesTech. Todos los derechos reservados.</p>
+        <div className="pt-6 sm:pt-8 border-t border-primary/20 text-center text-muted-foreground text-sm sm:text-base">
+          <p>2025 AndesTech. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
