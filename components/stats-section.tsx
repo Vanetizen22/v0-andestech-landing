@@ -17,15 +17,15 @@ const stats = [
   },
   {
     icon: Code,
-    value: "100+",
+    value: "10+",
     label: "Proyectos Colaborativos",
-    description: "Open source y comunidad",
+    description: "Expuestos en nuestros eventos sociales",
   },
   {
     icon: Award,
     value: "20+",
     label: "Speakers Invitados",
-    description: "Expertos de la industria",
+    description: "Expertos de la industria tech",
   },
 ]
 
