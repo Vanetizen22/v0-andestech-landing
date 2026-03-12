@@ -35,8 +35,7 @@ export function AboutSection() {
             ¿Que es <span className="text-primary">AndesTech</span>?
           </h2>
           <p className="text-base sm:text-xl text-muted-foreground max-w-3xl mx-auto text-pretty px-2">
-            Somos una comunidad apasionada por la tecnología, dedicada a crear espacios de aprendizaje, colaboración e
-            innovación para desarrolladores, diseñadores y profesionales del sector tecnológico.
+            AndesTech es una comunidad donde la tecnología se aprende y se comparte. Nos juntamos a conversar, experimentar y conectar con otras personas del mundo tech, siempre en un ambiente abierto, colaborativo y buena onda.
           </p>
         </div>
 

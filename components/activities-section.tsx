@@ -6,14 +6,14 @@ export function ActivitiesSection() {
   const activities = [
     {
       icon: Beer,
-      title: "/birras",
+      title: "/Birras",
       subtitle: "Infraestructura & Telco",
       description: "Encuentros de la comunidad de infraestructura donde compartimos experiencias sobre redes, cloud, telecomunicaciones y operaciones reales en producción, en un ambiente distendido.",
       slug: "birras",
     },
     {
       icon: Coffee,
-      title: "devcafé",
+      title: "DevCafé",
       subtitle: "Desarrollo de software",
       description: "Un espacio para la comunidad dev donde exploramos nuevas herramientas, compartimos proyectos y aprendemos sobre programación, arquitectura y tecnologías emergentes.",
       slug: "devcafe",
@@ -58,9 +58,8 @@ export function ActivitiesSection() {
         <Card className="p-6 sm:p-12 bg-gradient-to-br from-primary/10 to-card border-primary/30 max-w-4xl mx-auto">
           <h3 className="text-2xl sm:text-3xl font-bold text-center mb-4 sm:mb-6">Nuestra Mision</h3>
           <p className="text-base sm:text-lg text-muted-foreground text-center text-pretty leading-relaxed">
-            Construir tanto una comunidad como un formato de eventos que permitan reunir personas, recursos y
-            experiencias alrededor de la tecnología. Siempre bajo la luz de los valores fundamentales basados en el
-            respeto mutuo y la tolerancia.
+            Construir una comunidad y un formato de eventos que reúnan personas, recursos y experiencias alrededor de la tecnología, promoviendo espacios de aprendizaje, colaboración e intercambio bajo valores de respeto mutuo y tolerancia.
+Además, buscamos visibilizar el talento tecnológico del interior del país y potenciar a nuestra región como un polo de innovación.
           </p>
         </Card>
       </div>
