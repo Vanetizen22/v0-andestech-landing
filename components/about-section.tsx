@@ -5,8 +5,8 @@ export function AboutSection() {
   const features = [
     {
       icon: Code2,
-      title: "Desarrollo Web",
-      description: "Aprende las últimas tecnologías y frameworks para desarrollo web moderno.",
+      title: "Inclusión en la comunidad tech",
+      description: "Generamos espacios abiertos para que más personas puedan acercarse al mundo de la tecnología, aprender, compartir y formar parte de la comunidad.",
     },
     {
       icon: Users,
@@ -20,7 +20,7 @@ export function AboutSection() {
     },
     {
       icon: Calendar,
-      title: "Eventos Regulares",
+      title: "Eventos Regulares Sociales",
       description: "Participa en meetups, talleres y conferencias organizadas por la comunidad.",
     },
   ]

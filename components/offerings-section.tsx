@@ -5,7 +5,7 @@ export function OfferingsSection() {
   const offerings = [
     {
       icon: BookOpen,
-      title: "Aprendizaje Continuo",
+      title: "Compartir Conocimiento.",
       description:
         "Talleres y workshops sobre las últimas tecnologías, frameworks y herramientas del desarrollo moderno.",
     },
