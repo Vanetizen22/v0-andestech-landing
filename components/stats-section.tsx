@@ -5,7 +5,7 @@ import { Users, Calendar, Code, Award } from "lucide-react"
 const stats = [
   {
     icon: Users,
-    value: "500+",
+    value: "1000+",
     label: "Miembros Activos",
     description: "Desarrolladores ingenieros, estudiantes y entusiastas tech, ",
   },
