@@ -27,7 +27,7 @@ export function OfferingsSection() {
       <div className="container mx-auto">
         <div className="text-center mb-10 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-balance px-2">
-            Que <span className="text-primary">Ofrecemos</span>?
+            ¿Que <span className="text-primary">Ofrecemos</span>?
           </h2>
           <p className="text-base sm:text-xl text-muted-foreground max-w-3xl mx-auto text-pretty px-2">
             AndesTech es mas que una comunidad, es un ecosistema de crecimiento tecnologico
