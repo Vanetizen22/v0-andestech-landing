@@ -2,7 +2,6 @@
 
 import { Button } from "@/components/ui/button"
 import { ImageIcon } from "lucide-react"
-import Link from "next/link"
 
 export function EventsSection() {
   return (
@@ -34,16 +33,15 @@ export function EventsSection() {
         </div>
 
         <div className="text-center flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
-          <Link href="/galeria">
-            <Button
-              size="lg"
-              variant="outline"
-              className="w-full sm:w-auto border-primary/50 hover:bg-primary/10 hover-lift bg-transparent"
-            >
-              <ImageIcon className="w-5 h-5 mr-2" />
-              Ver Galeria de Eventos
-            </Button>
-          </Link>
+          <Button
+            size="lg"
+            variant="outline"
+            onClick={() => window.open("https://photos.google.com/albums", "_blank")}
+            className="w-full sm:w-auto border-primary/50 hover:bg-primary/10 hover-lift bg-transparent"
+          >
+            <ImageIcon className="w-5 h-5 mr-2" />
+            Ver Galeria de Eventos
+          </Button>
           <Button
             size="lg"
             variant="outline"
