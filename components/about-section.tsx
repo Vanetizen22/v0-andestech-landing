@@ -32,7 +32,7 @@ export function AboutSection() {
       <div className="container mx-auto relative z-10">
         <div className="text-center mb-10 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-balance px-2">
-            Que es <span className="text-primary">AndesTech</span>?
+            ¿Que es <span className="text-primary">AndesTech</span>?
           </h2>
           <p className="text-base sm:text-xl text-muted-foreground max-w-3xl mx-auto text-pretty px-2">
             Somos una comunidad apasionada por la tecnología, dedicada a crear espacios de aprendizaje, colaboración e
