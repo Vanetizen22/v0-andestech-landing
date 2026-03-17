@@ -44,13 +44,13 @@ export function HeroSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="inline-flex items-center justify-center mb-4 sm:mb-8 w-full max-w-3xl px-4">
+          <div className="inline-flex items-center justify-center mb-4 sm:mb-8 px-4">
             <Image
               src="/andestech-logo-white.png"
               alt="AndesTech Logo"
-              width={600}
-              height={200}
-              className="object-contain animate-float w-full h-auto rounded-lg"
+              width={400}
+              height={133}
+              className="object-contain animate-float w-64 sm:w-80 md:w-96 h-auto rounded-lg"
               style={{ filter: "drop-shadow(0 0 30px rgba(0, 217, 255, 0.6))" }}
               priority
             />
