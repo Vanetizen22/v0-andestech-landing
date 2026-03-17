@@ -117,7 +117,8 @@ export function StaffSection() {
                 {/* Contenido superpuesto */}
                 <div className="absolute inset-0 flex flex-col justify-end p-3 sm:p-4">
                   <h3 className="text-sm sm:text-base font-semibold text-foreground truncate">{member.name}</h3>
-                  <p className="text-xs text-primary font-medium">{member.role}</p>
+                  <p className="text-xs text-primary font-medium mb-1">{member.role}</p>
+                  <p className="text-[10px] sm:text-xs text-muted-foreground line-clamp-2 leading-tight">{member.description}</p>
                   
                   {/* Iconos sociales */}
                   <div className="flex gap-2 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
