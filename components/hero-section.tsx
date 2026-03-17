@@ -44,19 +44,19 @@ export function HeroSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="inline-flex items-center justify-center w-32 h-32 sm:w-40 md:w-48 sm:h-40 md:h-48 mb-4 sm:mb-8">
+          <div className="inline-flex items-center justify-center mb-4 sm:mb-8 w-full max-w-3xl px-4">
             <Image
               src="/andestech-logo-white.png"
               alt="AndesTech Logo"
-              width={192}
-              height={192}
-              className="object-contain animate-float my-0 mx-0 leading-[0.2rem] text-justify h-56 w-max rounded-lg"
+              width={600}
+              height={200}
+              className="object-contain animate-float w-full h-auto rounded-lg"
               style={{ filter: "drop-shadow(0 0 30px rgba(0, 217, 255, 0.6))" }}
               priority
             />
           </div>
 
-          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-balance px-[7px]">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-balance px-[7px] max-w-3xl mx-auto">
             Bienvenido a la comunidad de <span className="text-primary animate-glow">AndesTech</span>
           </h1>
 
