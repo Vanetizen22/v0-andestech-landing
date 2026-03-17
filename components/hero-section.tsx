@@ -65,20 +65,20 @@ export function HeroSection() {
             networking en el oeste de Argentina.
           </p>
 
-          <div className="flex justify-center items-center pt-2 sm:pt-4 px-4">
-            <div className="inline-flex rounded-lg overflow-hidden border border-primary/50">
+          <div className="flex justify-center items-center pt-4 sm:pt-6 px-4">
+            <div className="inline-flex rounded-lg overflow-hidden border-2 border-primary">
               <Button
                 size="lg"
-                variant="outline"
+                variant="ghost"
                 onClick={scrollToEvents}
-                className="text-sm sm:text-base px-4 sm:px-6 rounded-none border-0 border-r border-primary/50 bg-transparent hover:bg-primary/10 transition-all"
+                className="text-sm sm:text-base px-5 sm:px-8 py-3 rounded-none border-r-2 border-primary text-foreground hover:bg-primary/20 transition-all"
               >
                 Proximos Eventos
               </Button>
               <Button
                 size="lg"
                 onClick={() => window.open("https://linktr.ee/andestech", "_blank")}
-                className="text-sm sm:text-base px-4 sm:px-6 rounded-none border-0 bg-primary hover:bg-primary/90 transition-all"
+                className="text-sm sm:text-base px-5 sm:px-8 py-3 rounded-none bg-primary text-primary-foreground hover:bg-primary/90 transition-all"
               >
                 Unite a la Comunidad
               </Button>
