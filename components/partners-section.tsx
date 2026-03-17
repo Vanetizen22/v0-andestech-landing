@@ -72,8 +72,8 @@ export function PartnersSection() {
                 <Image
                   src={partner.logo || "/placeholder.svg"}
                   alt={partner.name}
-                  width={180}
-                  height={90}
+                  width={230}
+                  height={140}
                   className="object-contain max-w-full max-h-full group-hover:scale-110 transition-transform"
                 />
               </div>
