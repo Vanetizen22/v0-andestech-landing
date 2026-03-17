@@ -7,18 +7,18 @@ export function PartnersSection() {
   const scrollRef = useRef<HTMLDivElement>(null)
 
   const allPartners = [
-    { name: "Possumus", logo: "/1.png" },
-    { name: "Wiber", logo: "/2.png" },
-    { name: "Arlink", logo: "/3.png" },
-    { name: "Rootstock", logo: "/4.png" },
-    { name: "3ng", logo: "/5.png" },
-    { name: "Wakapi", logo: "/6.png" },
-    { name: "Westnet", logo: "/7.png" },
-    { name: "Polkadot", logo: "/8.png" },
-    { name: "Acruxteam", logo: "/9.png" },
-    { name: "JCI", logo: "/10.png" },
-    { name: "uch", logo: "/11.png" },
-    { name: "itu", logo: "/12.png" },
+    { name: "Possumus", logo: "/marcas/1.png" },
+    { name: "Wiber", logo: "/marcas/2.png" },
+    { name: "Arlink", logo: "/marcas/3.png" },
+    { name: "Rootstock", logo: "/marcas/4.png" },
+    { name: "3ng", logo: "/marcas/5.png" },
+    { name: "Wakapi", logo: "/marcas/6.png" },
+    { name: "Westnet", logo: "/marcas/7.png" },
+    { name: "Polkadot", logo: "/marcas/8.png" },
+    { name: "Acruxteam", logo: "/marcas/9.png" },
+    { name: "JCI", logo: "/marcas/10.png" },
+    { name: "uch", logo: "/marcas/11.png" },
+    { name: "itu", logo: "/marcas/12.png" },
   ]
 
   const duplicatedPartners = [...allPartners, ...allPartners]
