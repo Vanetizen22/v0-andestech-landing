@@ -12,7 +12,7 @@ export function StaffSection() {
       initials: "LC",
     },
     {
-      name: "Carlos Rodríguez",
+      name: "Carlos Rodríguez ",
       role: "Administrador",
       description: "DevOps engineer y especialista en cloud computing",
       avatar: "/professional-man-developer.png",
