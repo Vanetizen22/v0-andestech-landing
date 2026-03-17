@@ -95,30 +95,43 @@ export function StaffSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 max-w-7xl mx-auto">
+        {/* Grid uniforme con tarjetas cuadradas */}
+        <div className="flex flex-wrap justify-center gap-4 sm:gap-5 max-w-6xl mx-auto">
           {staff.map((member, index) => (
-            <Card
+            <div
               key={index}
-              className="p-4 sm:p-6 bg-card border-primary/20 hover:border-primary/50 transition-all hover:shadow-[0_0_30px_rgba(0,217,255,0.2)] text-center"
+              className="group relative w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-0.875rem)] lg:w-[calc(25%-0.9375rem)] aspect-square"
             >
-              <Avatar className="w-16 h-16 sm:w-24 sm:h-24 mx-auto mb-3 sm:mb-4 border-2 border-primary/30">
-                <AvatarImage src={member.avatar || "/placeholder.svg"} alt={member.name} />
-                <AvatarFallback className="bg-primary/10 text-primary text-lg sm:text-xl">{member.initials}</AvatarFallback>
-              </Avatar>
-
-              <h3 className="text-base sm:text-xl font-semibold mb-1">{member.name}</h3>
-              <p className="text-xs sm:text-sm text-primary mb-2 sm:mb-3">{member.role}</p>
-              <p className="text-xs sm:text-sm text-muted-foreground mb-3 sm:mb-4 text-pretty hidden sm:block">{member.description}</p>
-
-              <div className="flex gap-3 justify-center">
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors p-1">
-                  <Twitter className="w-4 h-4 sm:w-5 sm:h-5" />
-                </a>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors p-1">
-                  <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
-                </a>
-              </div>
-            </Card>
+              <Card className="absolute inset-0 bg-card border-primary/20 hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,217,255,0.2)] overflow-hidden">
+                {/* Imagen de fondo */}
+                <div className="absolute inset-0">
+                  <img 
+                    src={member.avatar || "/placeholder.svg"} 
+                    alt={member.name}
+                    className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300"
+                  />
+                  {/* Overlay gradiente */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
+                </div>
+                
+                {/* Contenido superpuesto */}
+                <div className="absolute inset-0 flex flex-col justify-end p-3 sm:p-4">
+                  <h3 className="text-sm sm:text-base font-semibold text-foreground truncate">{member.name}</h3>
+                  <p className="text-xs text-primary font-medium mb-1">{member.role}</p>
+                  <p className="text-[10px] sm:text-xs text-muted-foreground line-clamp-2 leading-tight">{member.description}</p>
+                  
+                  {/* Iconos sociales */}
+                  <div className="flex gap-2 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                      <Twitter className="w-3.5 h-3.5" />
+                    </a>
+                    <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                      <Linkedin className="w-3.5 h-3.5" />
+                    </a>
+                  </div>
+                </div>
+              </Card>
+            </div>
           ))}
         </div>
       </div>

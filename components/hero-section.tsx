@@ -44,19 +44,19 @@ export function HeroSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="inline-flex items-center justify-center w-32 h-32 sm:w-40 md:w-48 sm:h-40 md:h-48 mb-4 sm:mb-8">
+          <div className="inline-flex items-center justify-center mb-4 sm:mb-8 px-4">
             <Image
               src="/andestech-logo-white.png"
               alt="AndesTech Logo"
-              width={192}
-              height={192}
-              className="object-contain animate-float my-0 mx-0 leading-[0.2rem] text-justify h-56 w-max rounded-lg"
+              width={400}
+              height={133}
+              className="object-contain animate-float w-64 sm:w-80 md:w-96 h-auto rounded-lg"
               style={{ filter: "drop-shadow(0 0 30px rgba(0, 217, 255, 0.6))" }}
               priority
             />
           </div>
 
-          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-balance px-[7px]">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-balance px-[7px] max-w-3xl mx-auto">
             Bienvenido a la comunidad de <span className="text-primary animate-glow">AndesTech</span>
           </h1>
 
@@ -65,23 +65,24 @@ export function HeroSection() {
             networking en el oeste de Argentina.
           </p>
 
-          <div className="flex flex-col gap-3 sm:gap-4 justify-center items-center pt-2 sm:pt-4 px-4">
-            <Button
-              size="lg"
-              onClick={() => window.open("https://linktr.ee/andestech", "_blank")}
-              className="group relative text-base sm:text-lg px-6 sm:px-8 w-full sm:w-auto animate-pulse-glow hover:scale-105 transition-transform duration-300 overflow-hidden"
-            >
-              <span className="relative z-10">Unete a la Comunidad</span>
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-shimmer" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              onClick={scrollToEvents}
-              className="text-base sm:text-lg px-6 sm:px-8 w-full sm:w-auto border-primary/50 hover:bg-primary/10 bg-transparent hover-lift"
-            >
-              Ver Proximos Eventos
-            </Button>
+          <div className="flex justify-center items-center pt-4 sm:pt-6 px-4">
+            <div className="inline-flex rounded-lg overflow-hidden border-2 border-primary">
+              <Button
+                size="lg"
+                variant="ghost"
+                onClick={scrollToEvents}
+                className="text-sm sm:text-base px-5 sm:px-8 py-3 rounded-none border-r-2 border-primary text-foreground hover:bg-primary/20 transition-all"
+              >
+                Proximos Eventos
+              </Button>
+              <Button
+                size="lg"
+                onClick={() => window.open("https://linktr.ee/andestech", "_blank")}
+                className="text-sm sm:text-base px-5 sm:px-8 py-3 rounded-none bg-primary text-primary-foreground hover:bg-primary/90 transition-all"
+              >
+                Unite a la Comunidad
+              </Button>
+            </div>
           </div>
 
           <div className="flex gap-8 sm:gap-6 justify-center items-center pt-6 sm:pt-8">
