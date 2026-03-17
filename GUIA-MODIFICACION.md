@@ -4,7 +4,7 @@
 
 ---
 
-## 1. Cambiar el Texto del Hero
+## 1. Cambiar el Texto del Hero test
 
 **Archivo:** `components/hero-section.tsx`
 
