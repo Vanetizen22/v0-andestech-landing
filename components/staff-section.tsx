@@ -22,7 +22,7 @@ export function StaffSection() {
       name: "Francesco Gentile",
       role: "Fundador",
       description: "un fachero",
-      avatar: "/fran.png",
+      avatar: "/Fran.png",
       initials: "AM",
     },
     {
