@@ -68,7 +68,7 @@ export function HeroSection() {
           <div className="flex justify-center items-center pt-4 sm:pt-6 px-4">
             <div className="inline-flex rounded-lg overflow-hidden border-2 border-primary">
               <Button
-                size="lg"
+                size="15g"
                 variant="ghost"
                 onClick={scrollToEvents}
                 className="text-sm sm:text-base px-5 sm:px-8 py-3 rounded-none border-r-2 border-primary text-foreground hover:bg-primary/20 transition-all"
@@ -76,7 +76,7 @@ export function HeroSection() {
                 Proximos Eventos
               </Button>
               <Button
-                size="lg"
+                size="15g"
                 onClick={() => window.open("https://linktr.ee/andestech", "_blank")}
                 className="text-sm sm:text-base px-5 sm:px-8 py-3 rounded-none bg-primary text-primary-foreground hover:bg-primary/90 transition-all"
               >
