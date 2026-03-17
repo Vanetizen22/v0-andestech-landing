@@ -95,31 +95,58 @@ export function StaffSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 max-w-7xl mx-auto">
-          {staff.map((member, index) => (
-            <Card
-              key={index}
-              className="p-4 sm:p-6 bg-card border-primary/20 hover:border-primary/50 transition-all hover:shadow-[0_0_30px_rgba(0,217,255,0.2)] text-center"
-            >
-              <Avatar className="w-16 h-16 sm:w-24 sm:h-24 mx-auto mb-3 sm:mb-4 border-2 border-primary/30">
-                <AvatarImage src={member.avatar || "/placeholder.svg"} alt={member.name} />
-                <AvatarFallback className="bg-primary/10 text-primary text-lg sm:text-xl">{member.initials}</AvatarFallback>
-              </Avatar>
+        <div className="max-w-7xl mx-auto">
+          {/* First row: 6 cards */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 mb-3 sm:mb-4">
+            {staff.slice(0, 6).map((member, index) => (
+              <Card
+                key={index}
+                className="p-3 sm:p-4 bg-card border-primary/20 hover:border-primary/50 transition-all hover:shadow-[0_0_30px_rgba(0,217,255,0.2)] text-center"
+              >
+                <Avatar className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-2 sm:mb-3 border-2 border-primary/30">
+                  <AvatarImage src={member.avatar || "/placeholder.svg"} alt={member.name} />
+                  <AvatarFallback className="bg-primary/10 text-primary text-base sm:text-lg">{member.initials}</AvatarFallback>
+                </Avatar>
+                <h3 className="text-sm sm:text-base font-semibold mb-1 leading-tight">{member.name}</h3>
+                <p className="text-xs text-primary mb-2">{member.role}</p>
+                <p className="text-xs text-muted-foreground mb-2 text-pretty hidden sm:block">{member.description}</p>
+                <div className="flex gap-2 justify-center">
+                  <a href="#" className="text-muted-foreground hover:text-primary transition-colors p-1">
+                    <Twitter className="w-3 h-3 sm:w-4 sm:h-4" />
+                  </a>
+                  <a href="#" className="text-muted-foreground hover:text-primary transition-colors p-1">
+                    <Linkedin className="w-3 h-3 sm:w-4 sm:h-4" />
+                  </a>
+                </div>
+              </Card>
+            ))}
+          </div>
 
-              <h3 className="text-base sm:text-xl font-semibold mb-1">{member.name}</h3>
-              <p className="text-xs sm:text-sm text-primary mb-2 sm:mb-3">{member.role}</p>
-              <p className="text-xs sm:text-sm text-muted-foreground mb-3 sm:mb-4 text-pretty hidden sm:block">{member.description}</p>
-
-              <div className="flex gap-3 justify-center">
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors p-1">
-                  <Twitter className="w-4 h-4 sm:w-5 sm:h-5" />
-                </a>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors p-1">
-                  <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
-                </a>
-              </div>
-            </Card>
-          ))}
+          {/* Second row: 5 cards centered */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 lg:px-[8.333%]">
+            {staff.slice(6).map((member, index) => (
+              <Card
+                key={index + 6}
+                className="p-3 sm:p-4 bg-card border-primary/20 hover:border-primary/50 transition-all hover:shadow-[0_0_30px_rgba(0,217,255,0.2)] text-center"
+              >
+                <Avatar className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-2 sm:mb-3 border-2 border-primary/30">
+                  <AvatarImage src={member.avatar || "/placeholder.svg"} alt={member.name} />
+                  <AvatarFallback className="bg-primary/10 text-primary text-base sm:text-lg">{member.initials}</AvatarFallback>
+                </Avatar>
+                <h3 className="text-sm sm:text-base font-semibold mb-1 leading-tight">{member.name}</h3>
+                <p className="text-xs text-primary mb-2">{member.role}</p>
+                <p className="text-xs text-muted-foreground mb-2 text-pretty hidden sm:block">{member.description}</p>
+                <div className="flex gap-2 justify-center">
+                  <a href="#" className="text-muted-foreground hover:text-primary transition-colors p-1">
+                    <Twitter className="w-3 h-3 sm:w-4 sm:h-4" />
+                  </a>
+                  <a href="#" className="text-muted-foreground hover:text-primary transition-colors p-1">
+                    <Linkedin className="w-3 h-3 sm:w-4 sm:h-4" />
+                  </a>
+                </div>
+              </Card>
+            ))}
+          </div>
         </div>
       </div>
     </section>
