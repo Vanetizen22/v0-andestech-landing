@@ -7,16 +7,18 @@ export function PartnersSection() {
   const scrollRef = useRef<HTMLDivElement>(null)
 
   const allPartners = [
-    { name: "Tech Argentina", logo: "/tech-argentina-logo.jpg" },
-    { name: "Dev Salta", logo: "/dev-salta-logo.jpg" },
-    { name: "Universidad Nacional de Salta", logo: "/universidad-nacional-salta-logo.jpg" },
-    { name: "Polo Tecnológico NOA", logo: "/polo-tecnologico-noa-logo.jpg" },
-    { name: "TechCorp Solutions", logo: "/techcorp-solutions-logo.jpg" },
-    { name: "Digital Innovations", logo: "/digital-innovations-logo.jpg" },
-    { name: "CloudHost Argentina", logo: "/cloudhost-argentina-logo.jpg" },
-    { name: "CodeAcademy NOA", logo: "/codeacademy-noa-logo.jpg" },
-    { name: "StartupHub Salta", logo: "/startuphub-salta-logo.jpg" },
-    { name: "Pizza&Code", logo: "/pizza-code-logo.jpg" },
+    { name: "Possumus", logo: "/1.png" },
+    { name: "Wiber", logo: "/2.png" },
+    { name: "Arlink", logo: "/3.png" },
+    { name: "Rootstock", logo: "/4.png" },
+    { name: "3ng", logo: "/5.png" },
+    { name: "Wakapi", logo: "/6.png" },
+    { name: "Westnet", logo: "/7.png" },
+    { name: "Polkadot", logo: "/8.png" },
+    { name: "Acruxteam", logo: "/9.png" },
+    { name: "JCI", logo: "/10.png" },
+    { name: "uch", logo: "/11.png" },
+    { name: "itu", logo: "/12.png" },
   ]
 
   const duplicatedPartners = [...allPartners, ...allPartners]
