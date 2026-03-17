@@ -61,7 +61,7 @@ export function StaffSection() {
       initials: "DF",
     },
      {
-      name: "Diego Fernández",
+      name: "Diego Fernándseez",
       role: "Administrador",
       description: "Backend developer y arquitecto de software",
       avatar: "/professional-man-software-architect.jpg",
