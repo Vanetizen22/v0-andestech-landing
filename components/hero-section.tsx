@@ -65,24 +65,19 @@ export function HeroSection() {
             networking en el oeste de Argentina.
           </p>
 
-          <div className="flex justify-center items-center pt-4 sm:pt-6 px-4">
-            <div className="inline-flex rounded-lg overflow-hidden border-2 border-primary">
-              <Button
-                size="15g"
-                variant="ghost"
-                onClick={scrollToEvents}
-                className="text-sm sm:text-base px-5 sm:px-8 py-3 rounded-none border-r-2 border-primary text-foreground hover:bg-primary/20 transition-all"
-              >
-                Proximos Eventos
-              </Button>
-              <Button
-                size="15g"
-                onClick={() => window.open("https://linktr.ee/andestech", "_blank")}
-                className="text-sm sm:text-base px-5 sm:px-8 py-3 rounded-none bg-primary text-primary-foreground hover:bg-primary/90 transition-all"
-              >
-                Unite a la Comunidad
-              </Button>
-            </div>
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center pt-4 sm:pt-6 px-4">
+            <button
+              onClick={scrollToEvents}
+              className="inline-block px-6 sm:px-8 py-2.5 sm:py-3 bg-primary text-primary-foreground rounded-lg font-semibold text-sm sm:text-base hover:shadow-[0_0_20px_rgba(0,217,255,0.5)] transition-all hover:scale-105"
+            >
+              Proximos Eventos
+            </button>
+            <button
+              onClick={() => window.open("https://linktr.ee/andestech", "_blank")}
+              className="inline-block px-6 sm:px-8 py-2.5 sm:py-3 bg-primary text-primary-foreground rounded-lg font-semibold text-sm sm:text-base hover:shadow-[0_0_20px_rgba(0,217,255,0.5)] transition-all hover:scale-105"
+            >
+              Unite a la Comunidad
+            </button>
           </div>
 
           <div className="flex gap-8 sm:gap-6 justify-center items-center pt-6 sm:pt-8">
