@@ -32,6 +32,55 @@ export function StaffSection() {
       avatar: "/professional-man-software-architect.jpg",
       initials: "DF",
     },
+     {
+      name: "Diego Fernández",
+      role: "Administrador",
+      description: "Backend developer y arquitecto de software",
+      avatar: "/professional-man-software-architect.jpg",
+      initials: "DF",
+    },
+     {
+      name: "Diego Fernández",
+      role: "Administrador",
+      description: "Backend developer y arquitecto de software",
+      avatar: "/professional-man-software-architect.jpg",
+      initials: "DF",
+    },
+     {
+      name: "Diego Fernández",
+      role: "Administrador",
+      description: "Backend developer y arquitecto de software",
+      avatar: "/professional-man-software-architect.jpg",
+      initials: "DF",
+    },
+     {
+      name: "Diego Fernández",
+      role: "Administrador",
+      description: "Backend developer y arquitecto de software",
+      avatar: "/professional-man-software-architect.jpg",
+      initials: "DF",
+    },
+     {
+      name: "Diego Fernández",
+      role: "Administrador",
+      description: "Backend developer y arquitecto de software",
+      avatar: "/professional-man-software-architect.jpg",
+      initials: "DF",
+    },
+     {
+      name: "Diego Fernández",
+      role: "Administrador",
+      description: "Backend developer y arquitecto de software",
+      avatar: "/professional-man-software-architect.jpg",
+      initials: "DF",
+    },
+     {
+      name: "Diego Fernández",
+      role: "Administrador",
+      description: "Backend developer y arquitecto de software",
+      avatar: "/professional-man-software-architect.jpg",
+      initials: "DF",
+    }
   ]
 
   return (
