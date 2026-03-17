@@ -95,27 +95,84 @@ export function StaffSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 max-w-7xl mx-auto">
-          {staff.map((member, index) => (
+        {/* Primera fila: 4 tarjetas */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto mb-4 sm:mb-6">
+          {staff.slice(0, 4).map((member, index) => (
             <Card
               key={index}
-              className="p-4 sm:p-6 bg-card border-primary/20 hover:border-primary/50 transition-all hover:shadow-[0_0_30px_rgba(0,217,255,0.2)] text-center"
+              className="p-4 sm:p-6 bg-card border-primary/20 hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,217,255,0.2)] hover:-translate-y-1 text-center"
             >
-              <Avatar className="w-16 h-16 sm:w-24 sm:h-24 mx-auto mb-3 sm:mb-4 border-2 border-primary/30">
+              <Avatar className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-3 sm:mb-4 border-2 border-primary/30 ring-2 ring-primary/10 ring-offset-2 ring-offset-background">
                 <AvatarImage src={member.avatar || "/placeholder.svg"} alt={member.name} />
                 <AvatarFallback className="bg-primary/10 text-primary text-lg sm:text-xl">{member.initials}</AvatarFallback>
               </Avatar>
 
-              <h3 className="text-base sm:text-xl font-semibold mb-1">{member.name}</h3>
-              <p className="text-xs sm:text-sm text-primary mb-2 sm:mb-3">{member.role}</p>
-              <p className="text-xs sm:text-sm text-muted-foreground mb-3 sm:mb-4 text-pretty hidden sm:block">{member.description}</p>
+              <h3 className="text-sm sm:text-lg font-semibold mb-1 truncate">{member.name}</h3>
+              <p className="text-xs sm:text-sm text-primary mb-2 sm:mb-3 font-medium">{member.role}</p>
+              <p className="text-xs text-muted-foreground mb-3 sm:mb-4 text-pretty hidden sm:line-clamp-2">{member.description}</p>
 
               <div className="flex gap-3 justify-center">
                 <a href="#" className="text-muted-foreground hover:text-primary transition-colors p-1">
-                  <Twitter className="w-4 h-4 sm:w-5 sm:h-5" />
+                  <Twitter className="w-4 h-4" />
                 </a>
                 <a href="#" className="text-muted-foreground hover:text-primary transition-colors p-1">
-                  <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
+                  <Linkedin className="w-4 h-4" />
+                </a>
+              </div>
+            </Card>
+          ))}
+        </div>
+
+        {/* Segunda fila: 4 tarjetas */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto mb-4 sm:mb-6">
+          {staff.slice(4, 8).map((member, index) => (
+            <Card
+              key={index + 4}
+              className="p-4 sm:p-6 bg-card border-primary/20 hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,217,255,0.2)] hover:-translate-y-1 text-center"
+            >
+              <Avatar className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-3 sm:mb-4 border-2 border-primary/30 ring-2 ring-primary/10 ring-offset-2 ring-offset-background">
+                <AvatarImage src={member.avatar || "/placeholder.svg"} alt={member.name} />
+                <AvatarFallback className="bg-primary/10 text-primary text-lg sm:text-xl">{member.initials}</AvatarFallback>
+              </Avatar>
+
+              <h3 className="text-sm sm:text-lg font-semibold mb-1 truncate">{member.name}</h3>
+              <p className="text-xs sm:text-sm text-primary mb-2 sm:mb-3 font-medium">{member.role}</p>
+              <p className="text-xs text-muted-foreground mb-3 sm:mb-4 text-pretty hidden sm:line-clamp-2">{member.description}</p>
+
+              <div className="flex gap-3 justify-center">
+                <a href="#" className="text-muted-foreground hover:text-primary transition-colors p-1">
+                  <Twitter className="w-4 h-4" />
+                </a>
+                <a href="#" className="text-muted-foreground hover:text-primary transition-colors p-1">
+                  <Linkedin className="w-4 h-4" />
+                </a>
+              </div>
+            </Card>
+          ))}
+        </div>
+
+        {/* Tercera fila: 3 tarjetas centradas */}
+        <div className="flex flex-wrap justify-center gap-4 sm:gap-6 max-w-6xl mx-auto">
+          {staff.slice(8, 11).map((member, index) => (
+            <Card
+              key={index + 8}
+              className="p-4 sm:p-6 bg-card border-primary/20 hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,217,255,0.2)] hover:-translate-y-1 text-center w-[calc(50%-0.5rem)] lg:w-[calc(25%-1.125rem)]"
+            >
+              <Avatar className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-3 sm:mb-4 border-2 border-primary/30 ring-2 ring-primary/10 ring-offset-2 ring-offset-background">
+                <AvatarImage src={member.avatar || "/placeholder.svg"} alt={member.name} />
+                <AvatarFallback className="bg-primary/10 text-primary text-lg sm:text-xl">{member.initials}</AvatarFallback>
+              </Avatar>
+
+              <h3 className="text-sm sm:text-lg font-semibold mb-1 truncate">{member.name}</h3>
+              <p className="text-xs sm:text-sm text-primary mb-2 sm:mb-3 font-medium">{member.role}</p>
+              <p className="text-xs text-muted-foreground mb-3 sm:mb-4 text-pretty hidden sm:line-clamp-2">{member.description}</p>
+
+              <div className="flex gap-3 justify-center">
+                <a href="#" className="text-muted-foreground hover:text-primary transition-colors p-1">
+                  <Twitter className="w-4 h-4" />
+                </a>
+                <a href="#" className="text-muted-foreground hover:text-primary transition-colors p-1">
+                  <Linkedin className="w-4 h-4" />
                 </a>
               </div>
             </Card>
