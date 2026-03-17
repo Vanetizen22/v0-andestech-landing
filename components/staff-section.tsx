@@ -5,11 +5,11 @@ import { Linkedin, Twitter } from "lucide-react"
 export function StaffSection() {
   const staff = [
     {
-      name: "María González",
-      role: "Fundadora",
-      description: "Full-stack developer especializada en React y Node.js",
-      avatar: "/professional-woman-developer.png",
-      initials: "MG",
+      name: "Lautaro Celedon",
+      role: "Fundador",
+      description: "Técnico en Redes y Telecomunicaciones especializado en infraestructura cloud, virtualización y networking corporativo.",
+      avatar: "/lauta.jpeg",
+      initials: "LC",
     },
     {
       name: "Carlos Rodríguez",
