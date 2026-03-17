@@ -65,23 +65,24 @@ export function HeroSection() {
             networking en el oeste de Argentina.
           </p>
 
-          <div className="flex flex-col gap-3 sm:gap-4 justify-center items-center pt-2 sm:pt-4 px-4">
-            <Button
-              size="lg"
-              onClick={() => window.open("https://linktr.ee/andestech", "_blank")}
-              className="group relative text-base sm:text-lg px-6 sm:px-8 w-full sm:w-auto animate-pulse-glow hover:scale-105 transition-transform duration-300 overflow-hidden"
-            >
-              <span className="relative z-10">Unete a la Comunidad</span>
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-shimmer" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              onClick={scrollToEvents}
-              className="text-base sm:text-lg px-6 sm:px-8 w-full sm:w-auto border-primary/50 hover:bg-primary/10 bg-transparent hover-lift"
-            >
-              Ver Proximos Eventos
-            </Button>
+          <div className="flex justify-center items-center pt-2 sm:pt-4 px-4">
+            <div className="inline-flex rounded-lg overflow-hidden border border-primary/50">
+              <Button
+                size="lg"
+                variant="outline"
+                onClick={scrollToEvents}
+                className="text-sm sm:text-base px-4 sm:px-6 rounded-none border-0 border-r border-primary/50 bg-transparent hover:bg-primary/10 transition-all"
+              >
+                Proximos Eventos
+              </Button>
+              <Button
+                size="lg"
+                onClick={() => window.open("https://linktr.ee/andestech", "_blank")}
+                className="text-sm sm:text-base px-4 sm:px-6 rounded-none border-0 bg-primary hover:bg-primary/90 transition-all"
+              >
+                Unite a la Comunidad
+              </Button>
+            </div>
           </div>
 
           <div className="flex gap-8 sm:gap-6 justify-center items-center pt-6 sm:pt-8">
