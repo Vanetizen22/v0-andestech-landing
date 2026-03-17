@@ -22,7 +22,7 @@
 
 ## 2. Agregar un Nuevo Evento
 
-**Archivo:** `components/events-section.tsx`
+**Archivo: ** `components/events-section.tsx`
 
 \`\`\`tsx
 // LÍNEA ~20-30
