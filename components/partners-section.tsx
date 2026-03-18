@@ -64,19 +64,32 @@ export function PartnersSection() {
             className="flex gap-6 sm:gap-12 overflow-hidden items-center py-4 sm:py-8"
             style={{ scrollBehavior: "auto" }}
           >
-            {duplicatedPartners.map((partner, index) => (
-              <div
-                key={index}
-                className="flex-shrink-0 w-36 h-20 sm:w-52 sm:h-28 relative bg-card/50 rounded-lg border border-primary/20 hover:border-primary/50 transition-all hover:shadow-[0_0_30px_rgba(0,217,255,0.3)] p-1.5 sm:p-2.5 group"
-              >
-                <Image
-                  src={partner.logo || "/placeholder.svg"}
-                  alt={partner.name}
-                  fill
-                  className="object-contain p-1.5 sm:p-2.5 group-hover:scale-110 transition-transform"
-                />
-              </div>
-            ))}
+            {duplicatedPartners.map((partner, index) => {
+              let imageClassName = "object-contain p-1.5 sm:p-2.5 group-hover:scale-110 transition-transform"
+              
+              // Aplicar filtros específicos por logo
+              if (partner.name === "JCI") {
+                imageClassName += " brightness-0 invert"
+              } else if (partner.name === "Polkadot") {
+                imageClassName += " brightness-150 contrast-125"
+              } else if (partner.name === "We Love Tech") {
+                imageClassName += " brightness-150"
+              }
+              
+              return (
+                <div
+                  key={index}
+                  className="flex-shrink-0 w-36 h-20 sm:w-52 sm:h-28 relative bg-card/50 rounded-lg border border-primary/20 hover:border-primary/50 transition-all hover:shadow-[0_0_30px_rgba(0,217,255,0.3)] p-1.5 sm:p-2.5 group"
+                >
+                  <Image
+                    src={partner.logo || "/placeholder.svg"}
+                    alt={partner.name}
+                    fill
+                    className={imageClassName}
+                  />
+                </div>
+              )
+            })}
           </div>
 
           <div className="absolute top-0 left-0 w-16 sm:w-32 h-full bg-gradient-to-r from-background to-transparent pointer-events-none" />
