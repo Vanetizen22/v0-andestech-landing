@@ -71,9 +71,9 @@ export function PartnersSection() {
               if (partner.name === "JCI") {
                 imageClassName += " brightness-0 invert"
               } else if (partner.name === "Polkadot") {
-                imageClassName += " brightness-150 contrast-125"
+                imageClassName += " invert brightness-110"
               } else if (partner.name === "We Love Tech") {
-                imageClassName += " brightness-150"
+                imageClassName += " invert brightness-110"
               }
               
               return (
