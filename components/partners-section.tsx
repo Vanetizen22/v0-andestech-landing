@@ -66,25 +66,15 @@ export function PartnersSection() {
           >
             {duplicatedPartners.map((partner, index) => {
               let imageClassName = "object-contain group-hover:scale-110 transition-transform"
-              let cardClassName = "flex-shrink-0 relative bg-card/50 rounded-lg border border-primary/20 hover:border-primary/50 transition-all hover:shadow-[0_0_30px_rgba(0,217,255,0.3)] group flex items-center justify-center"
-              let imageWidth = 160
-              let imageHeight = 96
-              
-              // Tamaño específico por logo
-              if (partner.name === "Polkadot") {
-                cardClassName += " w-32 h-20 sm:w-44 sm:h-28 p-2 sm:p-3"
-                imageWidth = 120
-                imageHeight = 72
-                imageClassName += " brightness-200 contrast-125"
-              } else {
-                cardClassName += " w-40 h-24 sm:w-60 sm:h-32 p-2 sm:p-3"
-                imageWidth = 160
-                imageHeight = 96
-              }
+              let cardClassName = "flex-shrink-0 relative bg-card/50 rounded-lg border border-primary/20 hover:border-primary/50 transition-all hover:shadow-[0_0_30px_rgba(0,217,255,0.3)] group flex items-center justify-center w-32 h-20 sm:w-48 sm:h-28 p-2 sm:p-3"
+              let imageWidth = 140
+              let imageHeight = 84
               
               // Aplicar filtros específicos por logo
               if (partner.name === "JCI") {
                 imageClassName += " brightness-0 invert"
+              } else if (partner.name === "Polkadot") {
+                imageClassName += " brightness-200 contrast-125"
               } else if (partner.name === "We Love Tech") {
                 imageClassName += " invert brightness-110"
               }
