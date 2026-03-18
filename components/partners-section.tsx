@@ -67,14 +67,13 @@ export function PartnersSection() {
             {duplicatedPartners.map((partner, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-36 h-20 sm:w-52 sm:h-28 relative bg-card/50 rounded-lg border border-primary/20 hover:border-primary/50 transition-all hover:shadow-[0_0_30px_rgba(0,217,255,0.3)] p-1.5 sm:p-2.5 flex items-center justify-center group"
+                className="flex-shrink-0 w-36 h-20 sm:w-52 sm:h-28 relative bg-card/50 rounded-lg border border-primary/20 hover:border-primary/50 transition-all hover:shadow-[0_0_30px_rgba(0,217,255,0.3)] p-1.5 sm:p-2.5 group"
               >
                 <Image
                   src={partner.logo || "/placeholder.svg"}
                   alt={partner.name}
-                  width={230}
-                  height={140}
-                  className="object-contain max-w-full max-h-full group-hover:scale-110 transition-transform"
+                  fill
+                  className="object-contain p-1.5 sm:p-2.5 group-hover:scale-110 transition-transform"
                 />
               </div>
             ))}
