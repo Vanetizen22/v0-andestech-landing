@@ -66,6 +66,15 @@ export function PartnersSection() {
           >
             {duplicatedPartners.map((partner, index) => {
               let imageClassName = "object-contain p-1.5 sm:p-2.5 group-hover:scale-110 transition-transform"
+              let cardClassName = "flex-shrink-0 relative bg-card/50 rounded-lg border border-primary/20 hover:border-primary/50 transition-all hover:shadow-[0_0_30px_rgba(0,217,255,0.3)] p-1.5 sm:p-2.5 group"
+              
+              // Tamaño específico por logo
+              if (partner.name === "Polkadot") {
+                cardClassName += " w-28 h-16 sm:w-40 sm:h-24"
+                imageClassName += " brightness-200 contrast-125"
+              } else {
+                cardClassName += " w-40 h-24 sm:w-60 sm:h-32"
+              }
               
               // Aplicar filtros específicos por logo
               if (partner.name === "JCI") {
@@ -77,7 +86,7 @@ export function PartnersSection() {
               return (
                 <div
                   key={index}
-                  className="flex-shrink-0 w-36 h-20 sm:w-52 sm:h-28 relative bg-card/50 rounded-lg border border-primary/20 hover:border-primary/50 transition-all hover:shadow-[0_0_30px_rgba(0,217,255,0.3)] p-1.5 sm:p-2.5 group"
+                  className={cardClassName}
                 >
                   <Image
                     src={partner.logo || "/placeholder.svg"}
