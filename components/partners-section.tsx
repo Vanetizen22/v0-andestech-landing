@@ -14,7 +14,7 @@ export function PartnersSection() {
     { name: "3ng", logo: "/marcas/5.png" },
     { name: "Wakapi", logo: "/marcas/6.png" },
     { name: "Westnet", logo: "/marcas/7.png" },
-    { name: "Polkadot", logo: "/marcas/8.png" },
+    { name: "Polkadot", logo: "/marcas/polkadot.svg" },
     { name: "Acruxteam", logo: "/marcas/9.png" },
     { name: "JCI", logo: "/marcas/10.png" },
     { name: "uch", logo: "/marcas/11.png" },
@@ -64,20 +64,36 @@ export function PartnersSection() {
             className="flex gap-6 sm:gap-12 overflow-hidden items-center py-4 sm:py-8"
             style={{ scrollBehavior: "auto" }}
           >
-            {duplicatedPartners.map((partner, index) => (
-              <div
-                key={index}
-                className="flex-shrink-0 w-32 h-16 sm:w-48 sm:h-24 relative bg-card/50 rounded-lg border border-primary/20 hover:border-primary/50 transition-all hover:shadow-[0_0_30px_rgba(0,217,255,0.3)] p-2 sm:p-4 flex items-center justify-center group"
-              >
-                <Image
-                  src={partner.logo || "/placeholder.svg"}
-                  alt={partner.name}
-                  width={230}
-                  height={140}
-                  className="object-contain max-w-full max-h-full group-hover:scale-110 transition-transform"
-                />
-              </div>
-            ))}
+            {duplicatedPartners.map((partner, index) => {
+              let imageClassName = "object-contain group-hover:scale-110 transition-transform"
+              let cardClassName = "flex-shrink-0 relative bg-card/50 rounded-lg border border-primary/20 hover:border-primary/50 transition-all hover:shadow-[0_0_30px_rgba(0,217,255,0.3)] group flex items-center justify-center w-32 h-20 sm:w-48 sm:h-28 p-2 sm:p-3"
+              let imageWidth = 140
+              let imageHeight = 84
+              
+              // Aplicar filtros específicos por logo
+              if (partner.name === "JCI") {
+                imageClassName += " brightness-0 invert"
+              } else if (partner.name === "Polkadot") {
+                imageClassName += " brightness-200 contrast-125"
+              } else if (partner.name === "We Love Tech") {
+                imageClassName += " invert brightness-110"
+              }
+              
+              return (
+                <div
+                  key={index}
+                  className={cardClassName}
+                >
+                  <Image
+                    src={partner.logo || "/placeholder.svg"}
+                    alt={partner.name}
+                    width={imageWidth}
+                    height={imageHeight}
+                    className={imageClassName}
+                  />
+                </div>
+              )
+            })}
           </div>
 
           <div className="absolute top-0 left-0 w-16 sm:w-32 h-full bg-gradient-to-r from-background to-transparent pointer-events-none" />
