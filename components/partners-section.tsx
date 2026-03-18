@@ -65,15 +65,21 @@ export function PartnersSection() {
             style={{ scrollBehavior: "auto" }}
           >
             {duplicatedPartners.map((partner, index) => {
-              let imageClassName = "object-contain p-1.5 sm:p-2.5 group-hover:scale-110 transition-transform"
-              let cardClassName = "flex-shrink-0 relative bg-card/50 rounded-lg border border-primary/20 hover:border-primary/50 transition-all hover:shadow-[0_0_30px_rgba(0,217,255,0.3)] p-1.5 sm:p-2.5 group"
+              let imageClassName = "object-contain group-hover:scale-110 transition-transform"
+              let cardClassName = "flex-shrink-0 relative bg-card/50 rounded-lg border border-primary/20 hover:border-primary/50 transition-all hover:shadow-[0_0_30px_rgba(0,217,255,0.3)] group flex items-center justify-center"
+              let imageWidth = 160
+              let imageHeight = 96
               
               // Tamaño específico por logo
               if (partner.name === "Polkadot") {
-                cardClassName += " w-28 h-16 sm:w-40 sm:h-24"
+                cardClassName += " w-32 h-20 sm:w-44 sm:h-28 p-2 sm:p-3"
+                imageWidth = 120
+                imageHeight = 72
                 imageClassName += " brightness-200 contrast-125"
               } else {
-                cardClassName += " w-40 h-24 sm:w-60 sm:h-32"
+                cardClassName += " w-40 h-24 sm:w-60 sm:h-32 p-2 sm:p-3"
+                imageWidth = 160
+                imageHeight = 96
               }
               
               // Aplicar filtros específicos por logo
@@ -91,7 +97,8 @@ export function PartnersSection() {
                   <Image
                     src={partner.logo || "/placeholder.svg"}
                     alt={partner.name}
-                    fill
+                    width={imageWidth}
+                    height={imageHeight}
                     className={imageClassName}
                   />
                 </div>
