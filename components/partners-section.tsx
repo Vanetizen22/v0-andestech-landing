@@ -14,7 +14,7 @@ export function PartnersSection() {
     { name: "3ng", logo: "/marcas/5.png" },
     { name: "Wakapi", logo: "/marcas/6.png" },
     { name: "Westnet", logo: "/marcas/7.png" },
-    { name: "Polkadot", logo: "/marcas/8.png" },
+    { name: "Polkadot", logo: "/marcas/polkadot.svg" },
     { name: "Acruxteam", logo: "/marcas/9.png" },
     { name: "JCI", logo: "/marcas/10.png" },
     { name: "uch", logo: "/marcas/11.png" },
@@ -70,8 +70,6 @@ export function PartnersSection() {
               // Aplicar filtros específicos por logo
               if (partner.name === "JCI") {
                 imageClassName += " brightness-0 invert"
-              } else if (partner.name === "Polkadot") {
-                imageClassName += " [filter:brightness(10)_saturate(0.3)_hue-rotate(300deg)_contrast(1)]"
               } else if (partner.name === "We Love Tech") {
                 imageClassName += " invert brightness-110"
               }
