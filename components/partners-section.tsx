@@ -14,7 +14,7 @@ export function PartnersSection() {
     { name: "3ng", logo: "/marcas/5.png" },
     { name: "Wakapi", logo: "/marcas/6.png" },
     { name: "Westnet", logo: "/marcas/7.png" },
-    { name: "Polkadot", logo: "/marcas/8.png" },
+    { name: "Polkadot", logo: "/marcas/polkadot.svg" },
     { name: "Acruxteam", logo: "/marcas/9.png" },
     { name: "JCI", logo: "/marcas/10.png" },
     { name: "uch", logo: "/marcas/11.png" },
