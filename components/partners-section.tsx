@@ -67,7 +67,7 @@ export function PartnersSection() {
             {duplicatedPartners.map((partner, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-32 h-16 sm:w-48 sm:h-24 relative bg-card/50 rounded-lg border border-primary/20 hover:border-primary/50 transition-all hover:shadow-[0_0_30px_rgba(0,217,255,0.3)] p-2 sm:p-4 flex items-center justify-center group"
+                className="flex-shrink-0 w-36 h-20 sm:w-52 sm:h-28 relative bg-card/50 rounded-lg border border-primary/20 hover:border-primary/50 transition-all hover:shadow-[0_0_30px_rgba(0,217,255,0.3)] p-1.5 sm:p-2.5 flex items-center justify-center group"
               >
                 <Image
                   src={partner.logo || "/placeholder.svg"}
