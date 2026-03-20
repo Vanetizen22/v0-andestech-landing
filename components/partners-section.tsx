@@ -90,6 +90,7 @@ export function PartnersSection() {
                     width={imageWidth}
                     height={imageHeight}
                     className={imageClassName}
+                    style={{ width: "auto", height: "auto" }}
                   />
                 </div>
               )
