@@ -8,9 +8,10 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "AndesTech - Comunidad Tecnológica",
-  description:
-    "Comunidad tecnológica del oeste de Argentina. Conectamos desarrolladores, diseñadores y entusiastas de la tecnología.",
+  title: "Andes Tech",
+  description: "Soluciones tecnológicas avanzadas",
+  authors: [{ name: "Maria Eugenia Oyarse", url: "https://github.com/Vanetizen22" }],
+  creator: "Maria Eugenia Oyarse",
   generator: "v0.app",
   icons: {
     icon: [
