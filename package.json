@@ -1,6 +1,7 @@
 {
   "name": "my-v0-project",
   "version": "0.1.0",
+  "author": "Maria Eugenia Oyarse <tecnica.eugeoyarse@gmail.com>",
   "private": true,
   "scripts": {
     "build": "next build",
