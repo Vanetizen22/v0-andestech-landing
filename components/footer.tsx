@@ -106,7 +106,7 @@ export function Footer() {
         </div>
 
         <div className="pt-6 sm:pt-8 border-t border-primary/20 text-center text-muted-foreground text-sm sm:text-base">
-          <p>2025 AndesTech. Todos los derechos reservados.</p>
+          <p>2025 Eugenia Oyarse. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
