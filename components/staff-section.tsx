@@ -68,7 +68,7 @@ export function StaffSection() {
       initials: "DF",
     },
      {
-      name: "Vane",
+      name: "Eugenia Oyarse",
       role: "Fundador",
       description: "le pinta la tecnologia",
       avatar: "/vane.jpeg",
