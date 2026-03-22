@@ -78,6 +78,12 @@ export function HeroSection() {
             >
               Unite a la Comunidad
             </button>
+            <button
+              onClick={() => window.open("https://linktr.ee/andestech", "_blank")}
+              className="inline-block px-6 sm:px-8 py-2.5 sm:py-3 bg-primary text-primary-foreground rounded-lg font-semibold text-sm sm:text-base hover:shadow-[0_0_20px_rgba(0,217,255,0.5)] transition-all hover:scale-105"
+            >
+              Ser Sponsor
+            </button>
           </div>
 
           <div className="flex gap-8 sm:gap-6 justify-center items-center pt-6 sm:pt-8">
