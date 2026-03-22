@@ -8,7 +8,7 @@ export function StaffSection() {
       name: "Lautaro Celedon",
       role: "Fundador",
       description: "Técnico en Redes y Telecomunicaciones especializado en infraestructura cloud, virtualización y networking corporativo.",
-      avatar: "/lauta.jpeg",
+      avatar: "/lauta1.png",
       initials: "LC",
     },
     {
