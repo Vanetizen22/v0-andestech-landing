@@ -27,7 +27,7 @@ export function ContactSection() {
             ¿Listo para <span className="text-primary">Conectar</span>?
           </h2>
           <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto px-2">
-            Unite a nuestra comunidad y comenza a crecer junto a los mejores profesionales tech de los Andes
+            Unite a nuestra comunidad y comenzá a crecer junto a los mejores profesionales tech de los Andes
           </p>
         </div>
 

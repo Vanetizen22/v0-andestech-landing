@@ -9,7 +9,7 @@ export function EventsSection() {
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-10 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 px-2">
-            Proximos <span className="text-primary">Eventos</span>
+            Próximos <span className="text-primary">Eventos</span>
           </h2>
           <p className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto px-2">
             Unite a nuestros eventos y conecta con la comunidad tech de los Andes

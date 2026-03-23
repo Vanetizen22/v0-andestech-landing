@@ -25,7 +25,7 @@ export function ActivitiesSection() {
       <div className="container mx-auto">
         <div className="text-center mb-10 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-balance px-2">
-            ¿Que <span className="text-primary">Hacemos</span>?
+            ¿Qué <span className="text-primary">Hacemos</span>?
           </h2>
           <p className="text-base sm:text-xl text-muted-foreground max-w-3xl mx-auto text-pretty px-2">
             Espacios de networking y formación en diversas áreas tecnológicas
@@ -56,7 +56,7 @@ export function ActivitiesSection() {
         </div>
 
         <Card className="p-6 sm:p-12 bg-gradient-to-br from-primary/10 to-card border-primary/30 max-w-4xl mx-auto">
-          <h3 className="text-2xl sm:text-3xl font-bold text-center mb-4 sm:mb-6">Nuestra Mision</h3>
+          <h3 className="text-2xl sm:text-3xl font-bold text-center mb-4 sm:mb-6">Nuestra Misión</h3>
           <p className="text-base sm:text-lg text-muted-foreground text-center text-pretty leading-relaxed">
             Construir una comunidad y un formato de eventos que reúnan personas, recursos y experiencias alrededor de la tecnología, promoviendo espacios de aprendizaje, colaboración e intercambio bajo valores de respeto mutuo y tolerancia.
 Además, buscamos visibilizar el talento tecnológico del interior del país y potenciar a nuestra región como un polo de innovación.

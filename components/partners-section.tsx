@@ -104,9 +104,9 @@ export function PartnersSection() {
 
         <div className="mt-10 sm:mt-16 text-center">
           <div className="p-5 sm:p-8 bg-gradient-to-br from-primary/10 to-primary/5 border border-primary/30 rounded-lg max-w-2xl mx-auto">
-            <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-3">¿Queres ser sponsor?</h3>
+            <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-3">¿Querés ser sponsor?</h3>
             <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6 text-pretty">
-              Apoya a la comunidad tecnologica y dale visibilidad a tu marca en nuestros eventos
+              Apoya a la comunidad tecnológica y dale visibilidad a tu marca en nuestros eventos
             </p>
             <a
               href="mailto:sponsors@andestech.dev"
