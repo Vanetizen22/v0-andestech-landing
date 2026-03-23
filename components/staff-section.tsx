@@ -50,7 +50,7 @@ export function StaffSection() {
       name: "Marisol Herrera", 
       role: "Fundador",
       description: "una vez compró un kilo de helado de sambayón",
-      avatar: "/professional-man-software-architect.jpg",
+      avatar: "/marisol.png",
       initials: "DF",
     },
      {
