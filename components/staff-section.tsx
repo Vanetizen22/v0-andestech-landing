@@ -47,10 +47,10 @@ export function StaffSection() {
       initials: "DF",
     },
      {
-      name: "Marisol Herrera",
+      name: "Marisol Herrera", 
       role: "Fundador",
-      description: "una vez compro un kilo de helado de sambayon",
-      avatar: "/marisol.png",
+      description: "una vez compró un kilo de helado de sambayón",
+      avatar: "/professional-man-software-architect.jpg",
       initials: "DF",
     },
      {

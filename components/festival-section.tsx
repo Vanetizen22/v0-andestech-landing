@@ -17,7 +17,7 @@ export function FestivalSection() {
             <span className="text-primary">AndesTech</span> Festival
           </h2>
           <p className="text-base sm:text-xl text-muted-foreground max-w-3xl mx-auto text-pretty px-2">
-            El evento tecnologico más grande del oeste argentino. Una o dos veces al año reunimos a toda la comunidad
+            El evento tecnológico más grande del oeste argentino. Una o dos veces al año reunimos a toda la comunidad
             tech.
           </p>
         </div>
