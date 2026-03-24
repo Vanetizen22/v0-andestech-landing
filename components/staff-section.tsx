@@ -70,7 +70,7 @@ export function StaffSection() {
      {
       name: "Eugenia Oyarse",
       role: "Fundador",
-      description: "Desarrollador de software",
+      description: "Customer Support en Kripton  - Técnica Superior en Laboratorio - Desarrollador de software",
       avatar: "/vane.jpeg",
       initials: "DF",
     }
