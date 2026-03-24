@@ -49,9 +49,9 @@ export function StaffSection() {
      {
       name: "Marisol Herrera", 
       role: "Fundador",
-      description: "una vez compró un kilo de helado de sambayón",
+      description: "Técnico universitario en redes y telecomunicaciones. UNCuyo. Analista Funcional Sr. en BYMA. Docente rn",
       avatar: "/marisol.png",
-      initials: "DF",
+      initials: "MH",
     },
      {
       name: "Mauricio Caceres",
