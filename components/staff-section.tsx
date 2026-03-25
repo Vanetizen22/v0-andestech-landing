@@ -56,7 +56,7 @@ export function StaffSection() {
      {
       name: "Mauricio Caceres",
       role: "Fundador",
-      description: "Desarrollador de software",
+      description: "Ingeniero Mecatrónico, integrador Scada Ignition en Oil&Gas, Profesor Facultad de Ingeniería Uncuyo",
       avatar: "/mauri.jpeg",
       initials: "DF",
     },
