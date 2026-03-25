@@ -10,6 +10,8 @@ export function StaffSection() {
       description: "Técnico en Redes y Telecomunicaciones especializado en infraestructura cloud, virtualización y networking corporativo.",
       avatar: "/lauta1.png",
       initials: "LC",
+      linkedin: "",
+      twitter: "",
     },
     {
       name: "Arturo Baldo ",
@@ -17,6 +19,8 @@ export function StaffSection() {
       description: "Ingeniero de redes IP Architechs - Telecom Argentina",
       avatar: "/arturo1.jpeg",
       initials: "CR",
+      linkedin: "",
+      twitter: "",
     },
     {
       name: "Francesco Gentile",
@@ -24,6 +28,8 @@ export function StaffSection() {
       description: "CTO Eluter. Desarrollador de software",
       avatar: "/Fran.png",
       initials: "AM",
+      linkedin: "",
+      twitter: "",
     },
     {
       name: "Joaquin Rodriguez",
@@ -31,6 +37,8 @@ export function StaffSection() {
       description: "Desarrollador de software",
       avatar: "/joaco.jpeg",
       initials: "DF",
+      linkedin: "",
+      twitter: "",
     },
      {
       name: "David Enamorado",
@@ -38,6 +46,8 @@ export function StaffSection() {
       description: "Desarrollador de software",
       avatar: "/david.jpeg",
       initials: "DF",
+      linkedin: "",
+      twitter: "",
     },
      {
       name: "Mariano Marino",
@@ -45,6 +55,8 @@ export function StaffSection() {
       description: "Desarrollador de software",
       avatar: "/mariano.jpeg",
       initials: "DF",
+      linkedin: "",
+      twitter: "",
     },
      {
       name: "Marisol Herrera", 
@@ -52,6 +64,8 @@ export function StaffSection() {
       description: "Técnico universitario en redes y telecomunicaciones. UNCuyo. Analista Funcional Sr. en BYMA. Docente rn",
       avatar: "/marisol.png",
       initials: "MH",
+      linkedin: "",
+      twitter: "",
     },
      {
       name: "Mauricio Caceres",
@@ -59,6 +73,8 @@ export function StaffSection() {
       description: "Ingeniero Mecatrónico, integrador Scada Ignition en Oil&Gas, Profesor Facultad de Ingeniería Uncuyo",
       avatar: "/mauri.jpeg",
       initials: "DF",
+      linkedin: "",
+      twitter: "",
     },
      {
       name: "Federico Vazques",
@@ -66,6 +82,8 @@ export function StaffSection() {
       description: "Co-Fundador de Luxeo",
       avatar: "/fede.jpeg",
       initials: "DF",
+      linkedin: "",
+      twitter: "",
     },
      {
       name: "Eugenia Oyarse",
@@ -73,6 +91,8 @@ export function StaffSection() {
       description: "Customer Support en Kripton  - Técnica Superior en Laboratorio - Desarrollador de software",
       avatar: "/vane.jpeg",
       initials: "DF",
+      linkedin: "",
+      twitter: "",
     }
   ]
 
@@ -115,12 +135,16 @@ export function StaffSection() {
                   
                   {/* Iconos sociales */}
                   <div className="flex gap-2 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                      <Twitter className="w-3.5 h-3.5" />
-                    </a>
-                    <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                      <Linkedin className="w-3.5 h-3.5" />
-                    </a>
+                    {member.twitter && (
+                      <a href={member.twitter} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                        <Twitter className="w-3.5 h-3.5" />
+                      </a>
+                    )}
+                    {member.linkedin && (
+                      <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                        <Linkedin className="w-3.5 h-3.5" />
+                      </a>
+                    )}
                   </div>
                 </div>
               </Card>
