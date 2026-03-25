@@ -63,7 +63,7 @@ export function StaffSection() {
      {
       name: "Federico Vazques",
       role: "Fundador",
-      description: "Desarrollador de software",
+      description: "Co-Fundador de Luxeo",
       avatar: "/fede.jpeg",
       initials: "DF",
     },
